@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 // import {fontAwesomeIcon} from '@fortawesome/react-fontawesome';
 // import { faGoogle, faFacebook, faApple } from '@fortawesome/free-brands-svg-icons';
 import facebook from '../icones/facebook.png'
@@ -10,15 +10,23 @@ import '../App.css'
 import '../fonts.css'
 import Header from '../header/header'
 
+
+
+
 const Login = () => {
+
+    // const MostrarEsconderSenha = () => {
+    //     const [mostrarSenha, setMostrarSenha] = useState(false)
+
+    //     const AlternarVisibilidadeSenha = () => {
+    //         setMostrarSenha(!mostrarSenha);
+    //     }
+    // }
+
     return (
         <div className='tudo'>
-            <Header/>
+            <Header />
             <div className='principal-login'>
-
-                {/* <div className='imagem'>
-                    <div className='ex-img'></div>
-                </div> */}
 
                 <div className='bloco-form' >
                     <div className='img'>
@@ -27,9 +35,15 @@ const Login = () => {
                     <div className='form'>
                         <h1 className='centralizar'>Seja bem-vindo!</h1>
                         <form >
-
                             <input className='input' type="email" placeholder='Insira seu e-mail' /> <br />
-                            <input className='input' type="text" placeholder='Insira sua senha' />
+                            <input className='input' type='password' placeholder='Insira sua senha' />
+                            {
+                               /* <input className='input' type={mostrarSenha ? 'text' : 'password'} placeholder='Insira sua senha' />
+                                 {mostrarSenha ? (
+                                <VisibilityOff onClick={AlternarVisibilidadeSenha} />
+                            ) : (
+                                <Visibility onClick={AlternarVisibilidadeSenha} />
+                            )} */}
 
                         </form>
                         <div className='esqueceu-senha'>
@@ -46,9 +60,9 @@ const Login = () => {
                             <div className='todos-icones'>
                                 <button className='fundo-icone'>
                                     <div>
-                                    <img className='icones' src={facebook}/>
+                                        <img className='icones' src={facebook} />
                                     </div>
-                                    
+
                                 </button>
                                 <button className='fundo-icone' >
                                     <div>
@@ -58,7 +72,7 @@ const Login = () => {
                                 </button>
                                 <button className='fundo-icone' >
                                     <div>
-                                    <img className='icones' src={apple} />
+                                        <img className='icones' src={apple} />
                                     </div>
                                 </button>
                             </div>

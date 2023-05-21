@@ -19,6 +19,20 @@ button{
 button:hover{
   background-color: rgb(128, 128, 128);
 }
+input{
+  outline: none;
+  font-size: 20px;
+  padding: 0px 20px;
+  font-family: 'OpenSansBold', sans-serif;
+  color: #3D3838;
+}
+
+/* input:focus{
+  outline: none;
+  font-size: 20px;
+  font-family: 'OpenSansBold', sans-serif;
+  padding-left: 40px;
+} */
 
 .tudo{
   width: 100vw;
@@ -61,7 +75,7 @@ button:hover{
 
 .links{
   display: flex;
-  margin-left: 100px;
+  padding-left: 100px;
   align-items: center;
 }
 
@@ -123,7 +137,7 @@ button:hover{
 }
 
 .input{
-  width: 550px;
+  width: 510px;
   height: 70px;
   margin-top: 25px;
   border-radius: 10px;
@@ -138,7 +152,7 @@ button:hover{
 input::placeholder {
   font-size: 20px;
   font-family: 'OpenSansBold', sans-serif;
-  padding-left: 40px;
+  /* padding-left: 40px; */
 }
 
 .centralizar{
