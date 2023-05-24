@@ -7,3 +7,8 @@
     font-family: 'OpenSansRegular';
     src: url('./fonts/OpenSans-Regular.ttf');
 }
+
+@font-face {
+    font-family: 'OpenSansSemiBold';
+    src: url('./fonts/OpenSans-SemiBold.ttf');
+}

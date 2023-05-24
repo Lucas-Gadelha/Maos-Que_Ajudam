@@ -27,13 +27,6 @@ input{
   color: #3D3838;
 }
 
-/* input:focus{
-  outline: none;
-  font-size: 20px;
-  font-family: 'OpenSansBold', sans-serif;
-  padding-left: 40px;
-} */
-
 .tudo{
   width: 100vw;
   /* height: 100vh; */
@@ -41,17 +34,17 @@ input{
 }
 
 .principal-login{
+  margin-top: 120px;
   width: 100vw;
   height: 90vh;
   display: flex;
   background-color: #BBD7B6;
   
-  
-
-  /* border: 1px solid black; */
 }
 
 .header{
+  position: fixed;
+  top: 0;
   background-color: #F5F5F5;
   width: 100vw;
   height: 120px;
@@ -62,16 +55,8 @@ input{
 
 .logo{
   height: 80px;
-  /* padding: 50px; */
   
 }
-
-/* .imagem{
-  width: 40vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .links{
   display: flex;
@@ -81,6 +66,8 @@ input{
 
 .nome-links{
   padding-left: 40px;
+  position: relative;
+  right: 50px;
 }
 
 .nome-links a{
@@ -88,6 +75,10 @@ input{
   font-size: 16px;
   font-family: 'OpenSansRegular', sans-serif;
   text-decoration: none;
+}
+
+.nome-links a:hover{
+  color: #50738F;
 }
 
 .nome-links button{
@@ -103,19 +94,70 @@ input{
   background-color: #0a6319;
 }
 
-/* .botao-entrar{
-  width: 80px;
+.usuario{
+  padding-left: 40px;
+  position: fixed;
+  top: 25px;
+  right: 60px;
+}
+
+.usuario .botao-user{
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px 10px 0px 10px;
+  width: 50px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icone-user{
+  width: auto;
+  height: 30px;
+  padding: 10px 10px;
+  padding-bottom: 43px;
+}
+
+
+.conta-active{
+  background-color: #BCC8D1;
+  width: 180px;
+  position: relative;
+  right: 10px;
+  display: none;
  
-  border-radius: 10px;
-  border: none;
-  background-color: #0E761F;
-  align-self: center;
-  
-  font-size: 18px;
+}
+
+.conta-active .links-active{
+  padding: 15px;
+  border-bottom: 1px solid #54555A;
+  cursor: pointer;
+}
+
+.conta-active .links-active p{
+  text-align: center;
   font-family: 'OpenSansBold', sans-serif;
-  color: white;
-  
-} */
+  color: #54555A;
+  font-size: 18px;
+}
+
+.usuario .botao-user:hover{
+  background-color: #D9D9D9;
+}
+
+.usuario .botao-user:hover .conta-active {
+  display: block;
+}
+
+.links-active:hover{
+  background-color: #d1dee8;
+}
+
+
+
+
 
 
 .img{
@@ -254,4 +296,6 @@ border-radius: 10px; */
   /* width: 40px; */
   border: none;
 }
+
+
 

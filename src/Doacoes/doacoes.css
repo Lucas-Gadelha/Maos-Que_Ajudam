@@ -1,0 +1,135 @@
+.doacoes{
+    margin-top: 120px;
+    padding-top: 120px;
+    background-color: #EAEAEA;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.historico{
+    height: 80%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.titulo{
+    width: 95%;
+    background-color: #79ACD7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.titulo h1{
+    color: #F3F9FD;
+    font-size: 45px;
+    font-family: 'OpenSansBold', sans-serif;
+    text-align: center;
+}
+
+.lista-conteudo{
+    background-color: #E9E9EA;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 5px 8px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.conteudo{
+    box-sizing: border-box;
+    background-color: #86BFEF;
+    height: 15%;
+    width: 100%;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.conteudo p{
+    font-family: 'OpenSansRegular', sans-serif;
+    font-size: 30px;
+    color: #3D3838;
+}
+
+.area-doacao{
+    height: 80%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paginas{
+    box-sizing: border-box;
+    width: 100%;
+    height: 15%;
+    background-color: #86BFEF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid #3D3838;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pedidos{
+    height: 100%;
+    width: 50%;
+    background-color: #86BFEF;
+    border-right: 2px solid #3D3838;
+    border-top-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pedidos p{
+    font-family: 'OpenSansRegular', sans-serif;
+    font-size: 32px;
+    color: #3D3838;
+}
+
+.pedidos:hover{
+    background-color: #6B99BF;
+    border-top-left-radius: 10px;
+
+    
+}
+
+.pedidos:hover p{
+    color: #E9E9EA;
+}
+
+.solicitar{
+    height: 100%;
+    width: 50%;
+    background-color: #86BFEF;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.solicitar p{
+    font-family: 'OpenSansRegular', sans-serif;
+    font-size: 32px;
+    color: #3D3838;
+}
+
+.solicitar:hover{
+    background-color: #6B99BF;
+    border-top-right-radius: 10px;
+
+    
+}
+
+.solicitar:hover p{
+    color: #E9E9EA;
+}

@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.toda-pagina{
+    /*Se a pagina ficar maior do que deveria mexer aqui, se usar padding precisa diminuir o tamanho*/
+    width: 100vw;
+    height: 100vh;
+}
+
+.overlay-amarelo{
+    margin-top: 120px;
+    background-color: #fce389;
+    height: 600px;
+    
+}
+
+.texto{
+    padding-top: 80px;
+    height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.texto h1{
+    color: #54555A;
+}
+
+.sobre-nos{
+    height: 700px;
+    background-color: #EAEAEA;
+    display: flex;
+    align-items: center;
+    
+}
+
+.conteudo-texto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.texto-sobre{
+    width: 25%;
+    margin: 40px;
+}
+
+.texto-sobre h1{
+    font-size: 36px;
+}
+
+
+.texto-sobre p{
+    text-align: justify;
+    padding: 15px;
+    font-family: 'OpenSansRegular', sans-serif;
+    font-size: 20px;
+}
+
+.sobre-nos .imagem1{
+    margin: 40px;
+}
+
+.sobre-nos .imagem1 img{
+    height: 500px;
+}

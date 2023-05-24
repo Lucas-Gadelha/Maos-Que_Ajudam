@@ -1,6 +1,3 @@
-import React, { useState } from 'react'
-// import {fontAwesomeIcon} from '@fortawesome/react-fontawesome';
-// import { faGoogle, faFacebook, faApple } from '@fortawesome/free-brands-svg-icons';
 import facebook from '../icones/facebook.png'
 import google from '../icones/google.png'
 import apple from '../icones/apple.png'
@@ -9,20 +6,12 @@ import imagem from '../imagens/imagem.png'
 import '../App.css'
 import '../fonts.css'
 import Header from '../header/header'
+import { Link } from 'react-router-dom'
 
 
 
 
 const Login = () => {
-
-    // const MostrarEsconderSenha = () => {
-    //     const [mostrarSenha, setMostrarSenha] = useState(false)
-
-    //     const AlternarVisibilidadeSenha = () => {
-    //         setMostrarSenha(!mostrarSenha);
-    //     }
-    // }
-
     return (
         <div className='tudo'>
             <Header />
@@ -37,20 +26,13 @@ const Login = () => {
                         <form >
                             <input className='input' type="email" placeholder='Insira seu e-mail' /> <br />
                             <input className='input' type='password' placeholder='Insira sua senha' />
-                            {
-                               /* <input className='input' type={mostrarSenha ? 'text' : 'password'} placeholder='Insira sua senha' />
-                                 {mostrarSenha ? (
-                                <VisibilityOff onClick={AlternarVisibilidadeSenha} />
-                            ) : (
-                                <Visibility onClick={AlternarVisibilidadeSenha} />
-                            )} */}
 
                         </form>
                         <div className='esqueceu-senha'>
                             <a href="">Esqueceu a senha?</a>
                         </div>
                         <button className='botao'>
-                            <p>Enviar</p>
+                            <Link to={'/'} ><p>Entrar</p></Link>
                         </button>
                         <div className='cadastrese'>
                             <p>Ainda não tem conta? <a href="">Cadastre-se</a> </p>
