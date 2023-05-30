@@ -31,9 +31,11 @@ const Login = () => {
                         <div className='esqueceu-senha'>
                             <a href="">Esqueceu a senha?</a>
                         </div>
-                        <button className='botao'>
-                            <Link to={'/'} ><p>Entrar</p></Link>
-                        </button>
+                        <Link to={'/'} >
+                            <button className='botao'>
+                                <p>Entrar</p>
+                            </button>
+                        </Link>
                         <div className='cadastrese'>
                             <p>Ainda não tem conta? <a href="">Cadastre-se</a> </p>
                         </div >

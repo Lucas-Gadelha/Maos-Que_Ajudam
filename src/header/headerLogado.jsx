@@ -19,7 +19,7 @@ const HeaderLogado = () => {
                         <Link to={'/'}>Inicio</Link>
                     </div>
                     <div className='nome-links'>
-                        <Link to={'/doacoes'} >Doações</Link>
+                        <Link to={'/doacoes-pedidos'} >Doações</Link>
                     </div>
                     <div className='nome-links'>
                         <Link href="">Seja um voluntário</Link>
@@ -30,11 +30,6 @@ const HeaderLogado = () => {
                     <div className='nome-links'>
                         <Link clasName='link-eventos' href="">Eventos</Link>
                     </div>
-                    {/* <div className='usuario'>
-                        <button className='botao-user' >
-                            <img className='icone-user' src={user} alt='user' />
-                        </button>
-                    </div> */}
                 </div>
                 <div className='usuario'>
                     <div className='botao-user' >
@@ -42,9 +37,11 @@ const HeaderLogado = () => {
 
                         <div className='conta-active'>
                             <div className='links-active'> <p>Meu perfil</p></div>
-                            <div className='links-active' >
-                                <Link to={'/login'}><p>Sair</p></Link> 
-                            </div>
+                            <Link to={'/login'}>
+                                <div className='links-active' >
+                                    <p>Sair</p>
+                                </div>
+                            </Link> 
                         </div>
                     </div>
                 </div>

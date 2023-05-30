@@ -1,11 +1,26 @@
 import { useState } from "react"
 import HeaderLogado from "../header/headerLogado"
 import './doacoes.css'
+import Overlay from "./doacoes-solicitar"
+import Solicitar from "./solicitar-doacao"
+import DetalhesSolicitacao from "./detalhes-solicitacao"
 
 const Doacao = () => {
     const [doacoes, setDoacoes] = useState('Doacao 1')
     const [classeCSS, setClasseCSS] = useState('conteudo-historico-active')
     const [exibirDetalhes, setExibirDetalhes] = useState(false);
+
+    const [exibirPedidos, setExibirPedidos] = useState(true);
+    const [exibirSolicitar, setExibirSolicitar] = useState(false);
+
+    const [classePedidoAtiva, setClassePedidoAtiva] = useState('pedidos-active');
+    const [classeSolicitarAtiva, setClasseSolicitarAtiva] = useState('solicitar');
+    
+    const [botaoSolicitar, setBotaoSolicitar] = useState(false)
+
+    const [mostrarOverlay, setMostrarOverlay] = useState(false);
+
+    const [mostrarDetalhesSolicitacao, setMostrarDetalhesSolicitacao] = useState(false);
 
 
     const AcaoBotao = () => {
@@ -18,7 +33,39 @@ const Doacao = () => {
         setDoacoes('Doacao 1')
         setExibirDetalhes(false);
         setClasseCSS('conteudo-historico-active')
-      };
+    };
+
+
+    const MostrarOverlay = () => {
+        setMostrarOverlay(true)
+    }
+
+    const MostrarPedidos = () => {
+        setExibirPedidos(true)
+        setExibirSolicitar(false)
+
+        setClassePedidoAtiva('pedidos-active')
+        setClasseSolicitarAtiva('solicitar')
+
+    }
+
+    const MostrarSolicitar = () => {
+        setExibirSolicitar(true)
+        setExibirPedidos(false)
+
+        setClasseSolicitarAtiva('solicitar-active')
+        setClassePedidoAtiva('pedidos')
+
+    }
+
+    const AbrirPaginadeSolicitacao = () => {
+        setBotaoSolicitar(true)
+    }
+
+    const MostrarDetalhesSolicitacao = () => {
+        setMostrarDetalhesSolicitacao(true)
+    }
+
 
     return (
         <div className="toda-pagina">
@@ -42,9 +89,10 @@ const Doacao = () => {
                                 <p>{doacoes}</p>
                             </span>
 
-                        </div>  
+                        </div>
 
                         {exibirDetalhes ? (
+
                             <div className="detalhes-conteudo">
                                 <div className="titulo-detalhe">
                                     <h4>Resumo:</h4>
@@ -73,10 +121,9 @@ const Doacao = () => {
                                 <div className="titulo-detalhe">
                                     <h4>Entregue:</h4>
                                 </div>
-                                
-                                <div className="botao-voltar">
-                                <button onClick={AcaoBotaoVoltar} className="voltar">Voltar</button>
 
+                                <div className="botao-voltar">
+                                    <button onClick={AcaoBotaoVoltar} className="voltar">Voltar</button>
                                 </div>
                             </div>
                         ) : null}
@@ -88,20 +135,66 @@ const Doacao = () => {
                     </div>
                     <div className="lista-conteudo">
                         <div className="paginas">
-                            <button className="pedidos-active">
+                            <button onClick={MostrarPedidos} className={classePedidoAtiva}>
                                 <p>Pedidos</p>
                             </button>
-                            <button className="solicitar">
+                            <button onClick={MostrarSolicitar} className={classeSolicitarAtiva}>
                                 <p>Solicitar</p>
                             </button>
 
                         </div>
-                        <div className="conteudo-pedidos">
-                            <span>
-                                <p>Solicitação 1</p>
-                            </span>
 
-                        </div>
+                        {exibirPedidos ? (
+                            <div onClick={MostrarOverlay} className="conteudo-pedidos">
+                                <span >
+                                    <p>Solicitação 1</p>
+                                </span>
+
+                            </div>
+
+                        ) : null}
+
+                        {exibirSolicitar ? (
+                            <div>
+                                <div>
+                                    <div className="titulo-solicitar">
+                                        <p>Solicitações em Espera</p>
+                                    </div>
+                                    <div className="conteudo-solicitar">
+                                        <span onClick={MostrarDetalhesSolicitacao} >
+                                            <p>Solicitação 1</p>
+                                        </span>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="titulo-solicitar">
+                                        <p>Solicitações Concluidas</p>
+                                    </div>
+                                    <div className="conteudo-solicitar">
+                                        <span >
+                                            <p>Solicitação 1</p>
+                                        </span>
+
+                                    </div>
+                                </div>
+                                <div className="casa-do-botao">
+                                    <div onClick={AbrirPaginadeSolicitacao} className="botao-solicitar">
+                                        <span>
+                                            Solicitar
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        ) : null}
+
+                        {botaoSolicitar && <Solicitar/>}
+
+
+                        {mostrarOverlay && <Overlay />}
+
+                        {mostrarDetalhesSolicitacao && <DetalhesSolicitacao/>}
                     </div>
                 </div>
             </div>

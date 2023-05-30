@@ -16,9 +16,9 @@ p{
 button{
   border: none;
 }
-button:hover{
+/* button:hover{
   background-color: rgb(128, 128, 128);
-}
+} */
 input{
   outline: none;
   font-size: 20px;

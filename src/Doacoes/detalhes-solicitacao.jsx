@@ -3,9 +3,8 @@ import Doar from './doar'
 // import Doacao from './doacoes'
 import { useState } from "react"
 
-const Overlay = () => {
+const DetalhesSolicitacao = () => {
     const [fecharOverlay, setFecharOverlay] = useState(false)
-    const [doar, setDoar] = useState(false)
 
     const FecharOverlay = () => {
         setFecharOverlay(true)
@@ -13,10 +12,6 @@ const Overlay = () => {
 
     if(fecharOverlay==true){
         return null
-    }
-
-    const AbrirPaginaDoar = () => {
-        setDoar(true)
     }
 
 
@@ -42,20 +37,21 @@ const Overlay = () => {
                             <h4>Destinatário:</h4>
                         </div>
                         <div className="texto-detalhes">
+                            <h4>Volunatario:</h4>
+                        </div>
+                        <div className="texto-detalhes">
                             <h4>Código:</h4>
                         </div>
                         <div className="botoes">
-                            <button onClick={AbrirPaginaDoar} className="botao-doar">Doar</button>
                             <button onClick={FecharOverlay} className="botao-ok">OK</button>
 
                         </div>
                     </div>
                 </div>
             </div>
-            {doar && <Doar/>}
         </div>
     )
 }
 
 
-export default Overlay
+export default DetalhesSolicitacao
