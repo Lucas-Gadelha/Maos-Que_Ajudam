@@ -7,6 +7,7 @@ import Voluntario from './Voluntarios/voluntario';
 import { Eventos } from './Eventos/eventos';
 import HomeInstituicao from './Home/homeInstituicao';
 import VoluntarioPaginaInstituicao from './Voluntarios/VoluntarioInstituicao/voluntarioInstituicao';
+import Cadastro from './Cadastro/cadastro';
 
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route path='/voluntarioAdmin' element={<VoluntarioPaginaInstituicao/>} />
 
           <Route path='/login' element={<Login/>} />
+          <Route path='cadastro' element={<Cadastro/>} />
         </Routes>
       </BrowserRouter>
     </div>

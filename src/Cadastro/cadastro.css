@@ -1,0 +1,68 @@
+.principal-cadastro{
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    width: 100vw;
+    height: 90vh;
+    left: 0px;
+    
+    background: #86BFEF;
+  }
+  
+  .cadastre-se {
+  
+  width: 348px;
+  height: 57px;
+  margin-bottom: 50px;
+  
+  font-family: 'Pacifico';
+  text-align: end;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 98px;
+  
+  color: #3D3838;
+  
+  }
+  
+  .campos {
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .campo-titulo {
+
+  width: 166px;
+  height: 20px;
+  left: 25vw;
+  top: 406px;
+  
+  font-family: 'OpenSansBold', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  
+  color: #3D3838;
+    
+  }
+  
+  .campo-lacuna {
+  
+  position: absolute;
+  width: 434px;
+  height: 61px;
+  left: 503px;
+  top: 439px;
+  
+  background: #FFFFFF;
+  border-radius: 10px;
+  
+  }

@@ -37,7 +37,7 @@ const Login = () => {
                             </button>
                         </Link>
                         <div className='cadastrese'>
-                            <p>Ainda não tem conta? <a href="">Cadastre-se</a> </p>
+                            <p>Ainda não tem conta? <Link to={'/cadastro'} ><a>Cadastre-se</a></Link>  </p>
                         </div >
                         <div className='entrecom'>
                             <p>Entre com</p>
