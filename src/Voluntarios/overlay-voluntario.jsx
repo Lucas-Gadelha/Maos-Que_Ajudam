@@ -1,11 +1,11 @@
-import './doacoes.css'
-import Doar from './doar'
+import './voluntarios.css'
+// import Doar from './doar'
 // import Doacao from './doacoes'
 import { useState } from "react"
 
 const Overlay = () => {
     const [fecharOverlay, setFecharOverlay] = useState(false)
-    const [doar, setDoar] = useState(false)
+    // const [doar, setDoar] = useState(false)
 
     const FecharOverlay = () => {
         setFecharOverlay(true)
@@ -15,16 +15,13 @@ const Overlay = () => {
         return null
     }
 
-    const AbrirPaginaDoar = () => {
-        setDoar(true)
-    }
-
-
     return (
+        //Esse código aparece quando o voluntário clica em uma tarefa, para colocar a data e a hora que vai fazer a tarefa. Tem a opção confirmar ou cancelar
+
         <div>
 
             <div className='overlay'>
-                <div className='detalhes-pedidos-pag-doacoes'>
+                <div className='detalhes-pedidos'>
                     <div className="titulo">
                         <h1>Detalhes</h1>
                     </div>
@@ -42,17 +39,34 @@ const Overlay = () => {
                             <h4>Destinatário:</h4>
                         </div>
                         <div className="texto-detalhes">
+                            <h4>Voluntario:</h4>
+                        </div>
+                        <div className="texto-detalhes">
                             <h4>Código:</h4>
                         </div>
+                        <div className="texto-detalhes">
+                            <h4 className='data-voluntario'>
+                                <label>
+                                    <span>Data:</span><input type='date'></input>
+                                </label>
+                            </h4>
+                        </div>
+                        <div className="texto-detalhes">
+                            <h4>
+                                <label  className='hora-voluntario' >
+                                    <span>Hora:</span><input type='time'></input>
+                                </label>
+                            </h4>
+                        </div>
+                    
                         <div className="botoes">
-                            <button onClick={AbrirPaginaDoar} className="botao-doar">Doar</button>
-                            <button onClick={FecharOverlay} className="botao-ok">OK</button>
+                            <button onClick={FecharOverlay} className="Confirmar"><p>Confirmar</p></button>
+                            <button onClick={FecharOverlay} className="Cancelar"><p>Cancelar</p></button>
 
                         </div>
                     </div>
                 </div>
             </div>
-            {doar && <Doar/>}
         </div>
     )
 }

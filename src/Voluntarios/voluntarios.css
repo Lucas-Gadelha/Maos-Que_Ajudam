@@ -1,0 +1,442 @@
+
+span {
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 32;
+    color: #3D3838;
+}
+
+
+
+.area-voluntario {
+    margin-top: 120px;
+    padding-top: 120px;
+    background-color: #E3E5E7;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.titulo {
+    width: 95%;
+    background-color: #2F4354;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.titulo h1 {
+    color: #F3F9FD;
+    font-size: 45px;
+    font-family: 'OpenSansBold', sans-serif;
+    text-align: center;
+}
+
+
+/* Historico */
+
+.historico {
+    height: 80%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.lista-conteudo {
+    background-color: #E9E9EA;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 5px 8px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+
+.conteudo-historico-active {
+    box-sizing: border-box;
+    background-color: #50738F;
+    height: 15%;
+    width: 100%;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* border-radius: 10px; */
+    border-bottom: 1px solid #3D3838;
+}
+
+.conteudo-historico-active p {
+    font-family: 'OpenSansRegular', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+    /* Detalhes no historico */
+.detalhes-conteudo {
+    height: 100px;
+    background-color: #E9E9EA;
+
+    width: auto;
+    cursor: auto;
+    margin-top: 20px;
+    padding-left: 50px;
+}
+
+.titulo-detalhe {
+    padding: 10px 0px 10px 0px;
+}
+
+.detalhes-conteudo h4 {
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 24px;
+}
+
+.botao-voltar {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    /* Fim detalhes no historico */
+
+
+/* Fim do Historico */
+
+
+
+/* Área de se voluntariar */
+
+.area-se-voluntariar {
+    height: 80%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paginas {
+    box-sizing: border-box;
+    width: 100%;
+    height: 15%;
+    background-color: #86BFEF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid #3D3838;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    /* Area dos novos pedidos */
+.conteudo-pedidos-voluntario {
+    box-sizing: border-box;
+    background-color: #50738F;
+    height: 15%;
+    width: 100%;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid #3D3838;
+
+}
+
+.conteudo-pedidos-voluntario p {
+    font-family: 'OpenSansRegular', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.pedidos {
+    height: 100%;
+    width: 50%;
+    background-color: #86BFEF;
+    border-top-left-radius: 10px;
+    border-right: 2px solid #3D3838;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pedidos p {
+    font-family: 'OpenSansRegular', sans-serif;
+    font-size: 32px;
+    color: #3D3838;
+}
+
+.pedidos-active {
+    height: 100%;
+    width: 50%;
+    background-color: #6B99BF;
+    border-right: 2px solid #3D3838;
+    border-top-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pedidos-active p {
+    font-family: 'OpenSansRegular', sans-serif;
+    font-size: 32px;
+    color: #E9E9EA;
+}
+
+.pedidos-active:hover {
+    background-color: #6B99BF;
+    border-top-left-radius: 10px;
+
+
+}
+
+.pedidos-active:hover p {
+    color: #E9E9EA;
+}
+
+    /* Fim da area novos pedidos */
+
+
+
+    /* Área para ver os pedidos em andamento */
+
+/* Obs.: mudar o nome das classes "solicitar" para "pedidos-em-andamento" */
+
+.div-pai-solicitar {
+    width: 100%;
+    height: 100%;
+
+}
+
+.pedidos-em-andamento{
+    width: 100%;
+    height: 100%;
+}
+
+
+.titulo-solicitar {
+    box-sizing: border-box;
+    background-color: #79ACD7;
+    height: 10%;
+    width: 100%;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #3D3838;
+
+}
+
+.titulo-solicitar p {
+    font-family: 'OpenSansRegular', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.solicitar {
+    height: 100%;
+    width: 50%;
+    background-color: #86BFEF;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.solicitar p {
+    font-family: 'OpenSansRegular', sans-serif;
+    font-size: 32px;
+    color: #3D3838;
+}
+
+.solicitar-active {
+    height: 100%;
+    width: 50%;
+    background-color: #6B99BF;
+
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.solicitar-active p {
+    font-family: 'OpenSansRegular', sans-serif;
+    font-size: 32px;
+    color: #E9E9EA;
+}
+
+.solicitar-active:hover {
+    background-color: #6B99BF;
+    border-top-right-radius: 10px;
+
+
+}
+
+.solicitar-active:hover p {
+    color: #E9E9EA;
+}
+
+
+.conteudo-tarefas{
+    box-sizing: border-box;
+    background-color: #50738F;
+    height: 15%;
+    width: 100%;
+    /* padding-left: 50px; */
+    padding: 20px 10px 20px 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid #3D3838;
+}
+
+.conteudo-tarefas p {
+    font-family: 'OpenSansRegular', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+
+    /* botao */
+
+.voltar {
+    position: relative;
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: #6B99BF;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+    /* FIm Área para ver os pedidos em andamento */
+
+
+/* Fim area de se voluntariar */
+
+
+
+
+/* Overlay */
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-desativado {
+    display: none;
+}
+
+.detalhes-pedidos {
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    height: 80vh;
+}
+
+.detalhes-pedidos-desativado {
+    display: none;
+}
+
+.conteudo-detalhes {
+    width: 95%;
+    height: 100%;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: static;
+}
+
+.texto-detalhes {
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.texto-detalhes h4 {
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 20px;
+}
+
+
+.data-voluntario span{
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+.data-voluntario input{
+    outline: none;
+    border: 1px solid #79ACD7;
+    border-radius: 10px;
+    height: 40px;
+}
+
+.hora-voluntario span{
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+.hora-voluntario input{
+    outline: none;
+    border: 1px solid #79ACD7;
+    border-radius: 10px;
+    height: 40px;
+}
+
+
+.botoes {
+    display: flex;
+    justify-content: space-around;
+    /* padding-top: 10px; */
+    margin: 0px;
+    padding: 10px 80px 10px 80px;
+}
+
+
+
+.Confirmar {
+    width: auto;
+    padding: 15px;
+    background-color: #0E761F;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Confirmar p{
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 20px;
+}
+
+.Cancelar {
+    width: auto;
+    padding: 15px;
+    background-color: #BF1111;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Cancelar p{
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 20px;
+}
+
+/* Fim Overlay */
+

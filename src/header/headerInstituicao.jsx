@@ -5,7 +5,7 @@ import '../App.css'
 import '../fonts.css'
 import { Link } from 'react-router-dom'
 
-const HeaderLogado = () => {
+const HeaderInstituicao = () => {
     return (
         <div>
 
@@ -16,19 +16,19 @@ const HeaderLogado = () => {
                 </div>
                 <div className='links'>
                     <div className='nome-links'>
-                        <Link to={'/'}>Inicio</Link>
+                        <Link to={'/homeAdmin'}>Inicio</Link>
                     </div>
                     <div className='nome-links'>
-                        <Link to={'/doacoes'} >Doações</Link>
+                        <Link>Doações</Link>
                     </div>
                     <div className='nome-links'>
-                        <Link to={'/seja-um-voluntario'}>Seja um voluntário</Link>
+                        <Link to={'/voluntarioAdmin'} >Seja um voluntário</Link>
                     </div>
                     <div className='nome-links'>
                         <Link href="">Fale conosco</Link>
                     </div>
                     <div className='nome-links'>
-                        <Link to={'eventos'} clasName='link-eventos' href="">Eventos</Link>
+                        <Link clasName='link-eventos' href="">Eventos</Link>
                     </div>
                 </div>
                 <div className='usuario'>
@@ -50,4 +50,4 @@ const HeaderLogado = () => {
     )
 }
 
-export default HeaderLogado
+export default HeaderInstituicao

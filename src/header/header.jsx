@@ -1,6 +1,7 @@
 import logo from '../logo/logo.png'
 import '../App.css'
 import '../fonts.css'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     return(
@@ -25,9 +26,12 @@ const Header = () => {
                         <a href="">Eventos</a>
                     </div>
                     <div className='nome-links'>
-                        <button className='botao-entrar'>
-                            Entrar
-                        </button>
+                        <Link to={'/homeAdmin'}>
+                            <button className='botao-entrar'>
+                                Entrar
+                            </button>
+                        
+                        </Link>
                     </div>
                     
     

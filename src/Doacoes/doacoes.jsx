@@ -133,7 +133,7 @@ const Doacao = () => {
                     <div className="titulo">
                         <h1>Doações</h1>
                     </div>
-                    <div className="lista-conteudo">
+                    <div className="lista-conteudo-doacao">
                         <div className="paginas">
                             <button onClick={MostrarPedidos} className={classePedidoAtiva}>
                                 <p>Pedidos</p>
@@ -143,54 +143,67 @@ const Doacao = () => {
                             </button>
 
                         </div>
-
-                        {exibirPedidos ? (
-                            <div onClick={MostrarOverlay} className="conteudo-pedidos">
-                                <span >
-                                    <p>Solicitação 1</p>
-                                </span>
-
-                            </div>
-
-                        ) : null}
-
-                        {exibirSolicitar ? (
-                            <div>
-                                <div>
-                                    <div className="titulo-solicitar">
-                                        <p>Solicitações em Espera</p>
-                                    </div>
-                                    <div className="conteudo-solicitar">
-                                        <span onClick={MostrarDetalhesSolicitacao} >
-                                            <p>Solicitação 1</p>
-                                        </span>
-
-                                    </div>
-                                </div>
-                                <div>
-                                    <div className="titulo-solicitar">
-                                        <p>Solicitações Concluidas</p>
-                                    </div>
-                                    <div className="conteudo-solicitar">
+                        <div className="conteudo-box-right">
+                            {exibirPedidos ? (
+                                <div onClick={MostrarOverlay} className="conteudo-pedidos">
+                                    <div className="solicitacoes">
                                         <span >
                                             <p>Solicitação 1</p>
                                         </span>
 
                                     </div>
-                                </div>
-                                <div className="casa-do-botao">
-                                    <div onClick={AbrirPaginadeSolicitacao} className="botao-solicitar">
-                                        <span>
-                                            Solicitar
+
+                                    <div className="solicitacoes">
+                                        <span >
+                                            <p>Solicitação 1</p>
                                         </span>
+
                                     </div>
 
                                 </div>
-                            </div>
-                        ) : null}
+
+                            ) : null}
+
+                            {exibirSolicitar ? (
+                                <div className="conteudo-solicitar-geral">
+                                    <div>
+                                        <div className="titulo-solicitar">
+                                            <p>Solicitações em Espera</p>
+                                        </div>
+                                        <div className="conteudo-solicitar">
+                                            <span onClick={MostrarDetalhesSolicitacao} >
+                                                <p>Solicitação 1</p>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div className="titulo-solicitar">
+                                            <p>Solicitações Concluidas</p>
+                                        </div>
+                                        <div className="conteudo-solicitar">
+                                            <span >
+                                                <p>Solicitação 1</p>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                    <div className="casa-do-botao">
+                                        <div onClick={AbrirPaginadeSolicitacao} className="botao-solicitar">
+                                            <span>
+                                                Solicitar
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            ) : null}
+
+                        
+                        </div>
+
 
                         {botaoSolicitar && <Solicitar/>}
-
 
                         {mostrarOverlay && <Overlay />}
 
