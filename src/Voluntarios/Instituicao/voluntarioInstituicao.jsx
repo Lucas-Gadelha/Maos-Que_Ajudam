@@ -1,7 +1,22 @@
+import { useState } from 'react';
 import HeaderInstituicao from '../../header/headerInstituicao'
+import DetalhesPedido from './detalhesPedido';
 import './voluntarioInstituicao.css'
+import Adicionar from './adicionar';
 
 const VoluntarioPaginaInstituicao = () => {
+    const [mostrarDetalhes, setMostrarDetalhes] = useState(false)
+
+    const [mostrarAdicionar, setMostrarAdicionar] = useState(false)
+
+    const MostrarDetalhes = () => {
+        setMostrarDetalhes(true)
+    }
+
+    const MostrarAdicionar = () => {
+        setMostrarAdicionar(true)
+    }
+
     return (
         <div className="pagina-voluntario-instituicao">
             <HeaderInstituicao/>
@@ -29,7 +44,7 @@ const VoluntarioPaginaInstituicao = () => {
                     
                     <div className="itens-lista">
                         <div className="linha-itens">
-                            <div className="item">
+                            <div className="item" onClick={MostrarDetalhes}>
                                 <p>Entrega de...</p>
                             </div>
                             <div className="item">
@@ -216,10 +231,12 @@ const VoluntarioPaginaInstituicao = () => {
                 </div>
 
                 <div className='botao-adicionar'>
-                    <span>Adicionar</span>
+                    <span onClick={MostrarAdicionar} >Adicionar</span>
                 </div>
 
             </div>
+            {mostrarDetalhes && <DetalhesPedido/>}
+            {mostrarAdicionar && <Adicionar/> }
         </div>
     )
 }

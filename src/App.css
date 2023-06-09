@@ -16,9 +16,7 @@ p{
 button{
   border: none;
 }
-/* button:hover{
-  background-color: rgb(128, 128, 128);
-} */
+
 input{
   outline: none;
   font-size: 20px;
@@ -93,6 +91,91 @@ input{
 .nome-links button:hover{
   background-color: #0a6319;
 }
+
+
+
+/* doacoes instituicao*/
+
+.botao-doacoes{
+  position: relative;
+  padding-left: 40px;
+  right: 50px;
+
+}
+
+.conteudo-botao-doacoes{
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+
+}
+
+.nome-links-doacoes{
+  position: relative;
+}
+
+
+.nome-links-doacoes a{
+  color: #54555A;
+  font-size: 16px;
+  font-family: 'OpenSansRegular', sans-serif;
+  text-decoration: none;
+
+
+}
+
+.nome-links-doacoes a:hover{
+  color: #50738F;
+}
+
+
+.sub-doacoes{
+  position: relative;
+  background-color: #BCC8D1;
+  top: 50px;
+  width: auto;
+  
+
+  display: none;
+}
+
+.links-doacoes{
+  color: #54555A;
+  font-size: 16px;
+  font-family: 'OpenSansBold', sans-serif;
+  text-decoration: none; 
+  padding: 10px;
+
+
+  border-bottom: 1px solid #54555A;
+  cursor: pointer;
+}
+
+.botao-doacoes .conteudo-botao-doacoes:hover{
+  padding-top: 85px;
+
+  position: relative;
+  padding-left: 0px;
+  right: 0px;
+}
+
+.botao-doacoes .conteudo-botao-doacoes:hover .sub-doacoes{
+  display: block;
+}
+
+.links-doacoes:hover{
+  background-color: #d1dee8;
+}
+
+
+
+
+
+
+
 
 .usuario{
   padding-left: 40px;
@@ -193,7 +276,7 @@ input{
 
 input::placeholder {
   font-size: 20px;
-  font-family: 'OpenSansBold', sans-serif;
+  font-family: 'OpenSansRegular', sans-serif;
   /* padding-left: 40px; */
 }
 
@@ -229,17 +312,6 @@ button.botao:hover{
   border-radius: 10px;
   border: none;
   background-color: #0E761F;
-
-  /* Rectangle 7 */
-
-/* position: absolute;
-left: 52.99%;
-right: 11.04%;
-top: 59.47%;
-bottom: 35.55%;
-
-background: #0E761F;
-border-radius: 10px; */
 
 }
 

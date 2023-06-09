@@ -7,14 +7,14 @@ import DetalhesSolicitacao from "./detalhes-solicitacao"
 
 const Doacao = () => {
     const [doacoes, setDoacoes] = useState('Doacao 1')
-    const [classeCSS, setClasseCSS] = useState('conteudo-historico-active')
+    const [classeCSS, setClasseCSS] = useState('conteudo-historico-doacao-active')
     const [exibirDetalhes, setExibirDetalhes] = useState(false);
 
     const [exibirPedidos, setExibirPedidos] = useState(true);
     const [exibirSolicitar, setExibirSolicitar] = useState(false);
 
-    const [classePedidoAtiva, setClassePedidoAtiva] = useState('pedidos-active');
-    const [classeSolicitarAtiva, setClasseSolicitarAtiva] = useState('solicitar');
+    const [classePedidoAtiva, setClassePedidoAtiva] = useState('pedidos-doacao-active');
+    const [classeSolicitarAtiva, setClasseSolicitarAtiva] = useState('solicitar-doacao');
     
     const [botaoSolicitar, setBotaoSolicitar] = useState(false)
 
@@ -32,7 +32,7 @@ const Doacao = () => {
     const AcaoBotaoVoltar = () => {
         setDoacoes('Doacao 1')
         setExibirDetalhes(false);
-        setClasseCSS('conteudo-historico-active')
+        setClasseCSS('conteudo-historico-doacao-active')
     };
 
 
@@ -44,8 +44,8 @@ const Doacao = () => {
         setExibirPedidos(true)
         setExibirSolicitar(false)
 
-        setClassePedidoAtiva('pedidos-active')
-        setClasseSolicitarAtiva('solicitar')
+        setClassePedidoAtiva('pedidos-doacao-active')
+        setClasseSolicitarAtiva('solicitar-doacao')
 
     }
 
@@ -53,8 +53,8 @@ const Doacao = () => {
         setExibirSolicitar(true)
         setExibirPedidos(false)
 
-        setClasseSolicitarAtiva('solicitar-active')
-        setClassePedidoAtiva('pedidos')
+        setClasseSolicitarAtiva('solicitar-doacao-active')
+        setClassePedidoAtiva('pedidos-feitos')
 
     }
 
@@ -167,7 +167,7 @@ const Doacao = () => {
                             {exibirSolicitar ? (
                                 <div className="conteudo-solicitar-geral">
                                     <div>
-                                        <div className="titulo-solicitar">
+                                        <div className="titulo-solicitar-doacao">
                                             <p>Solicitações em Espera</p>
                                         </div>
                                         <div className="conteudo-solicitar">
@@ -178,7 +178,7 @@ const Doacao = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <div className="titulo-solicitar">
+                                        <div className="titulo-solicitar-doacao">
                                             <p>Solicitações Concluidas</p>
                                         </div>
                                         <div className="conteudo-solicitar">

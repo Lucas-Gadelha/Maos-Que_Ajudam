@@ -39,7 +39,8 @@ const Overlay = () => {
                             <h4>Destinatário:</h4>
                         </div>
                         <div className="texto-detalhes">
-                            <h4>Voluntario:</h4>
+                            <label>Voluntario:</label>
+                            <input type="text" placeholder='Escreva seu nome' />
                         </div>
                         <div className="texto-detalhes">
                             <h4>Código:</h4>

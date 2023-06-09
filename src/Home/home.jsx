@@ -21,7 +21,7 @@ const Home = () => {
                 <div className='conteudo-texto'>
                     <div className='texto-sobre'>
                         <h1>Sobre nós</h1>
-                        <p>O Projeto Mãos Que Ajudam é um projeto social que visa ajudar pessoas carentes de vestuário na cidade de Quixadá, Ceará.</p>
+                        <p>O Mãos que ajudam é um projeto que tem como objetivo ajudar pessoas em situação de vulnerabilidade, através de itens básicos do dia a dia, como: alimentos, produtos de higiene e vestimentas.</p>
                         <p>Trazemos conosco o objetivo de agregar voluntários para que possamos nos fortalecer e conseguir ajudar famílias da cidade de Quixadá.</p>
                         <p>Nossa rede de apoio almeja estabelecer laços entre doadores, voluntários (para entrega de doações) e a quem se destina as doações (beneficiados).</p>
                     </div>

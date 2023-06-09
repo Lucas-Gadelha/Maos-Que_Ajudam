@@ -6,8 +6,10 @@ import Login from './login/login';
 import Voluntario from './Voluntarios/voluntario';
 import { Eventos } from './Eventos/eventos';
 import HomeInstituicao from './Home/homeInstituicao';
-import VoluntarioPaginaInstituicao from './Voluntarios/VoluntarioInstituicao/voluntarioInstituicao';
+import VoluntarioPaginaInstituicao from './Voluntarios/Instituicao/voluntarioInstituicao';
 import Cadastro from './Cadastro/cadastro';
+import ListaPedidos from './Voluntarios/Instituicao/listadepedidos';
+import VerDoacao from './Voluntarios/Instituicao/verDoacao';
 
 
 
@@ -24,6 +26,8 @@ function App() {
 
           <Route path='/homeAdmin' element={<HomeInstituicao/>}/>
           <Route path='/voluntarioAdmin' element={<VoluntarioPaginaInstituicao/>} />
+          <Route path='/verPedidos' element={<ListaPedidos/>} />
+          <Route path='/verDoacoes' element={<VerDoacao/>} />
 
           <Route path='/login' element={<Login/>} />
           <Route path='cadastro' element={<Cadastro/>} />

@@ -179,32 +179,36 @@ const Voluntario = () => {
                                         {exibirDetalhesTarefas ? (
 
                                             <div className="detalhes-conteudo">
-                                                <div className="titulo-detalhe">
+                                                <div className="titulo-detalhe-voluntario">
                                                     <h4>Resumo:</h4>
                                                 </div>
 
-                                                <div className="titulo-detalhe">
+                                                <div className="titulo-detalhe-voluntario">
                                                     <h4>Endereço:</h4>
                                                 </div>
 
-                                                <div className="titulo-detalhe">
+                                                <div className="titulo-detalhe-voluntario">
                                                     <h4>Tipo de item:</h4>
                                                 </div>
 
-                                                <div className="titulo-detalhe">
+                                                <div className="titulo-detalhe-voluntario">
                                                     <h4>Destinatário:</h4>
                                                 </div>
 
-                                                <div className="titulo-detalhe">
+                                                <div className="titulo-detalhe-voluntario">
                                                     <h4>Voluntário:</h4>
                                                 </div>
 
-                                                <div className="titulo-detalhe">
+                                                <div className="titulo-detalhe-voluntario">
                                                     <h4>Código:</h4>
                                                 </div>
 
-                                                <div className="titulo-detalhe">
-                                                    <h4>Entregue:</h4>
+                                                <div className="titulo-detalhe-voluntario">
+                                                    <label> Entregue: </label>
+                                                    <select name="entregue">
+                                                        <option value="sim">Sim</option>
+                                                        <option value="nao">Não</option>
+                                                    </select>
                                                 </div>
 
                                                 <div className="botao-voltar">

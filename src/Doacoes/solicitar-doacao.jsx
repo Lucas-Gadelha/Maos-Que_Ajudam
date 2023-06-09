@@ -35,15 +35,24 @@ const Solicitar = () => {
                 </div>
                 <div className="conteudo-doar">
                     <div className="texto-doar">
-                        <h4>Qual tipo de doação você deseja solicitar?</h4>
+                        <label> ual tipo de doação você deseja solicitar? </label>
+                        <select name="solicitar doacao" required="required">
+                            <option value="comida"> Comida</option>
+                            <option value="roupa">Roupa</option>
+                            <option value="higiene">Itens de Higiene</option>
+                            <option value="outros">Outros</option>
+                        </select>
 
                     </div>
                     <div className="texto-doar">
-                        <h4>Quantidade:</h4>
+                        <label>Quantidade de itens:</label>
+                        <input className="numItens" type="number" min={1} max={50} required="required"/>
 
                     </div>
                     <div className="texto-doar">
-                        <h4>Destinatário/Beneficiário:</h4>
+                        <label>Beneficiário:</label>
+                        <input className="nomeBeneficiario" type="text" required='required' />
+
                     </div>
                     <div className="escrever">
                         <textarea></textarea>
@@ -95,7 +104,7 @@ const Solicitar = () => {
                             </div>
 
                         )}
-                        <div>
+                        {/* <div>
                             <div className="data-hora">
                                 <div className="data">
                                     <label>
@@ -110,13 +119,13 @@ const Solicitar = () => {
 
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="div-botoes">
                             <div className="div-botao">
                                 <span type='submit' onClick={FecharDoacao} className="Confirmar">Confirmar</span>
                             </div>
                             <div className="div-botao">
-                                <span onClick={FecharDoacao} className="Cancelar">Cancelar</span>
+                                <span type='submit' onClick={FecharDoacao} className="Cancelar">Cancelar</span>
                             </div>
                         </div>
                     </div>

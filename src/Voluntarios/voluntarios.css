@@ -10,7 +10,7 @@ span {
 .area-voluntario {
     margin-top: 120px;
     padding-top: 120px;
-    background-color: #E3E5E7;
+    background-color: #6B99BF;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -54,7 +54,7 @@ span {
 
 .conteudo-historico-active {
     box-sizing: border-box;
-    background-color: #50738F;
+    background-color: #DDDBDB;
     height: 15%;
     width: 100%;
     padding-left: 50px;
@@ -68,7 +68,7 @@ span {
 .conteudo-historico-active p {
     font-family: 'OpenSansRegular', sans-serif;
     font-size: 30px;
-    color: #ffffff;
+    color: #50738F;
 }
 
     /* Detalhes no historico */
@@ -82,8 +82,15 @@ span {
     padding-left: 50px;
 }
 
-.titulo-detalhe {
+.titulo-detalhe-voluntario {
     padding: 10px 0px 10px 0px;
+}
+.titulo-detalhe-voluntario label{
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 24px;
+}
+.titulo-detalhe-voluntario select{
+    height: 30px;
 }
 
 .detalhes-conteudo h4 {
@@ -131,7 +138,7 @@ span {
     /* Area dos novos pedidos */
 .conteudo-pedidos-voluntario {
     box-sizing: border-box;
-    background-color: #50738F;
+    background-color: #DDDBDB;
     height: 15%;
     width: 100%;
     padding-left: 50px;
@@ -145,13 +152,13 @@ span {
 .conteudo-pedidos-voluntario p {
     font-family: 'OpenSansRegular', sans-serif;
     font-size: 30px;
-    color: #ffffff;
+    color: #50738F;
 }
 
 .pedidos {
     height: 100%;
     width: 50%;
-    background-color: #86BFEF;
+    background-color: #DDDBDB;
     border-top-left-radius: 10px;
     border-right: 2px solid #3D3838;
     display: flex;
@@ -163,13 +170,13 @@ span {
 .pedidos p {
     font-family: 'OpenSansRegular', sans-serif;
     font-size: 32px;
-    color: #3D3838;
+    color: #50738F;
 }
 
 .pedidos-active {
     height: 100%;
     width: 50%;
-    background-color: #6B99BF;
+    background-color: #50738F;
     border-right: 2px solid #3D3838;
     border-top-left-radius: 10px;
     display: flex;
@@ -185,7 +192,7 @@ span {
 }
 
 .pedidos-active:hover {
-    background-color: #6B99BF;
+    background-color: #50738F;
     border-top-left-radius: 10px;
 
 
@@ -236,7 +243,7 @@ span {
 .solicitar {
     height: 100%;
     width: 50%;
-    background-color: #86BFEF;
+    background-color: #DDDBDB;
     border-top-right-radius: 10px;
     display: flex;
     justify-content: center;
@@ -247,13 +254,13 @@ span {
 .solicitar p {
     font-family: 'OpenSansRegular', sans-serif;
     font-size: 32px;
-    color: #3D3838;
+    color: #50738F;
 }
 
 .solicitar-active {
     height: 100%;
     width: 50%;
-    background-color: #6B99BF;
+    background-color: #50738F;
 
     border-top-right-radius: 10px;
     display: flex;
@@ -269,7 +276,7 @@ span {
 }
 
 .solicitar-active:hover {
-    background-color: #6B99BF;
+    background-color: #50738F;
     border-top-right-radius: 10px;
 
 
@@ -282,7 +289,7 @@ span {
 
 .conteudo-tarefas{
     box-sizing: border-box;
-    background-color: #50738F;
+    background-color: #DDDBDB;
     height: 15%;
     width: 100%;
     /* padding-left: 50px; */
@@ -296,7 +303,7 @@ span {
 .conteudo-tarefas p {
     font-family: 'OpenSansRegular', sans-serif;
     font-size: 30px;
-    color: #ffffff;
+    color: #50738F;
 }
 
 
@@ -308,10 +315,11 @@ span {
     font-size: 20px;
     cursor: pointer;
     box-sizing: border-box;
-    background-color: #6B99BF;
+    background-color: #50738F;
     width: 100px;
     height: 50px;
     border-radius: 10px;
+    color: white;
 }
     /* FIm Área para ver os pedidos em andamento */
 
@@ -373,7 +381,19 @@ span {
     font-family: 'OpenSansBold', sans-serif;
     font-size: 20px;
 }
+.texto-detalhes label {
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 20px;
+}
+.texto-detalhes input{
+    outline: none;
+    font-family: 'OpenSansRegular', sans-serif;
+    font-size: 20px;
 
+    border: 1px solid #79ACD7;
+    border-radius: 10px;
+    height: 40px;
+}
 
 .data-voluntario span{
     font-family: 'OpenSansBold', sans-serif;

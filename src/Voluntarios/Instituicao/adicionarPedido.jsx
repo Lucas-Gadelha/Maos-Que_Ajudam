@@ -1,16 +1,16 @@
-import Doacao from "./doacoes"
 import { useState } from "react"
+import ListaPedidos from "./listadepedidos"
 
-const Doar = () => {
-    const [fecharDoacao, setFecharDoacao] = useState(false)
+const AdicionarPedido = () => {
+    const [fecharAdicionarPedido, setFecharAdicionarPedido] = useState(false)
     const [opcaoSelecionada, setOpcaoSelecionada] = useState('');
     const [mostrarCampoEndereco, setMostrarCampoEndereco] = useState(false);
 
-    const FecharDoacao = () => {
-        setFecharDoacao(true)
+    const FecharAdicionarPedido = () => {
+        setFecharAdicionarPedido(true)
     }
 
-    if (fecharDoacao == true) {
+    if (fecharAdicionarPedido == true) {
         return null
     }
 
@@ -19,7 +19,7 @@ const Doar = () => {
         const valorSelecionado = event.target.value;
         setOpcaoSelecionada(valorSelecionado);
 
-        if (valorSelecionado === 'opcao3') {
+        if (valorSelecionado === 'opcao2') {
             setMostrarCampoEndereco(true);
         } else {
             setMostrarCampoEndereco(false);
@@ -31,7 +31,7 @@ const Doar = () => {
         <div className="pagina-doar">
             <div className="realizar-doacao">
                 <div className="titulo">
-                    <h1>Realizar doação</h1>
+                    <h1>Adicionar Pedido</h1>
                 </div>
                 <div className="conteudo-doar">
                     <div className="texto-doar">
@@ -46,18 +46,18 @@ const Doar = () => {
                     </div>
                     <div className="texto-doar">
                         <label>Quantidade de itens:</label>
-                        <input className="numItens" type="number" min={1} max={300} required="required"/>
+                        <input className="numItens" type="number" min={1} max={50} required="required"/>
 
                     </div>
                     <div className="texto-doar">
                         <label>Beneficiário:</label> 
-                        <span>Joao</span>
+                        <input className="nomeBeneficiario" type="text" required='required'  placeholder="Nome" />
                     </div>
                     <div className="escrever">
-                        <textarea placeholder="Detalhe os itens da sua doação. Ex: Arroz, feijao, sal...." ></textarea>
+                        <textarea placeholder="Detalhe os itens que deseja. Ex: Arroz, feijao, sal...." ></textarea>
                     </div>
 
-                    <div className="texto-doar">
+                    <div className="texto-doar"> 
                         <div className="endereco">
                             <label>
                                 <input
@@ -70,7 +70,7 @@ const Doar = () => {
                             </label>
 
                         </div>
-                        <div className="endereco">
+                        {/* <div className="endereco">
                             <label>
                                 <input
                                     type="radio"
@@ -81,19 +81,19 @@ const Doar = () => {
                                 <span>Entregar no ponto de coleta um</span>
                             </label>
 
-                        </div>
+                        </div>*/}
                         <div className="endereco">
                             <label>
                                 <input
                                     type="radio"
-                                    value="opcao3"
-                                    checked={opcaoSelecionada === 'opcao3'}
+                                    value="opcao2"
+                                    checked={opcaoSelecionada === 'opcao2'}
                                     onChange={VerificacaoValorInput}
                                 />
                                 <span>Não tenho disponibilidade para entregar, desejo informar meu endereço para coleta</span>
                             </label>
 
-                        </div>
+                            </div>
                         {mostrarCampoEndereco && (
                             <div className="endereco">
                                 <label>
@@ -103,13 +103,14 @@ const Doar = () => {
                             </div>
 
                         )}
+
                         
                         <div className="div-botoes">
                             <div className="div-botao">
-                                <span type='submit' onClick={FecharDoacao} className="Confirmar">Confirmar</span>
+                                <span type='submit' onClick={FecharAdicionarPedido} className="Confirmar">Confirmar</span>
                             </div>
                             <div className="div-botao">
-                                <span type='submit' onClick={FecharDoacao} className="Cancelar">Cancelar</span>
+                                <span type='submit' onClick={FecharAdicionarPedido} className="Cancelar">Cancelar</span>
                             </div>
                         </div>
                     </div>
@@ -118,9 +119,9 @@ const Doar = () => {
                 </div>
 
             </div>
-            {fecharDoacao && <Doacao />}
+            {fecharAdicionarPedido && <ListaPedidos/>}
         </div>
     )
 }
 
-export default Doar
+export default AdicionarPedido

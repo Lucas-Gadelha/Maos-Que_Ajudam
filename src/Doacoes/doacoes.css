@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .overlay-desativado{
@@ -58,10 +59,11 @@
     font-size: 20px;
     cursor: pointer;
     box-sizing: border-box;
-    background-color: #86BFEF;
+    background-color: #50738F;
     border-radius: 10px;
     width: 100px;
     height: 50px;
+    color: white;
 }
 
 .botao-ok{
@@ -70,7 +72,7 @@
     font-size: 20px;
     cursor: pointer;
     box-sizing: border-box;
-    background-color: #86BFEF;
+    background-color: #50738F;
     border-radius: 10px;
     width: 100px;
     height: 50px;
@@ -84,7 +86,7 @@
 .doacoes{
     margin-top: 120px;
     padding-top: 120px;
-    background-color: #E6D17B;
+    background-color: #6B99BF;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -140,9 +142,9 @@
     border-radius: 10px;
 } */
 
-.conteudo-historico-active{
+.conteudo-historico-doacao-active{
     box-sizing: border-box;
-    background-color: #86BFEF;
+    background-color: #DDDBDB;
     height: 15%;
     width: 100%;
     padding-left: 50px;
@@ -152,10 +154,10 @@
     border-bottom: 1px solid #3D3838;
 }
 
-.conteudo-historico-active p{
+.conteudo-historico-doacao-active p{
     font-family: 'OpenSansRegular', sans-serif;
     font-size: 30px;
-    color: #3D3838;
+    color: #50738F;
 }
 
 .conteudo-box-right{
@@ -164,7 +166,7 @@
 
 .conteudo-pedidos{
     box-sizing: border-box;
-    background-color: #86BFEF;
+    background-color: #DDDBDB;
     height: 15%;
     width: 100%;
    
@@ -178,7 +180,7 @@
 .conteudo-pedidos p{
     font-family: 'OpenSansRegular', sans-serif;
     font-size: 30px;
-    color: #3D3838;
+    color: #50738F;
 }
 
 .solicitacoes{
@@ -253,9 +255,9 @@
 }
 
 
-.titulo-solicitar{
+.titulo-solicitar-doacao{
     box-sizing: border-box;
-    background-color: #79ACD7;
+    background-color: #2F4354;
     height: 10%;
     width: 100%;
     padding-left: 50px;
@@ -264,7 +266,7 @@
     border-bottom: 1px solid #3D3838;
 
 }
-.titulo-solicitar p{
+.titulo-solicitar-doacao p{
     font-family: 'OpenSansRegular', sans-serif;
     font-size: 30px;
     color: #ffffff;
@@ -272,7 +274,7 @@
 
 .conteudo-solicitar{
     box-sizing: border-box;
-    background-color: #86BFEF;
+    background-color: #DDDBDB;
     height: 15%;
     width: 100%;
     /* padding-left: 50px; */
@@ -286,7 +288,7 @@
 .conteudo-solicitar p{
     font-family: 'OpenSansRegular', sans-serif;
     font-size: 30px;
-    color: #3D3838;
+    color: #50738F;
 }
 
 .casa-do-botao{
@@ -302,7 +304,7 @@
 .botao-solicitar{
     width: 20%;
     padding: 15px;
-    background-color: #6B99BF;
+    background-color: #50738F;
     border-radius: 10px;
     color: #ffffff;
     font-size: 22px;
@@ -345,7 +347,7 @@
     box-sizing: border-box;
     width: 100%;
     height: 15%;
-    background-color: #86BFEF;
+    background-color: #50738F;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom: 2px solid #3D3838;
@@ -358,10 +360,10 @@
     overflow: scroll;
 } */
 
-.pedidos{
+.pedidos-feitos{
     height: 100%;
     width: 50%;
-    background-color: #86BFEF;
+    background-color: #DDDBDB;
     border-top-left-radius: 10px;
     border-right: 2px solid #3D3838;
     display: flex;
@@ -369,16 +371,16 @@
     align-items: center;
     cursor: pointer;
 }
-.pedidos p{
+.pedidos-feitos p{
     font-family: 'OpenSansRegular', sans-serif;
     font-size: 32px;
-    color: #3D3838;
+    color: #50738F;
 }
 
-.pedidos-active{
+.pedidos-doacao-active{
     height: 100%;
     width: 50%;
-    background-color: #6B99BF;
+    background-color: #50738F;
     border-right: 2px solid #3D3838;
     border-top-left-radius: 10px;
     display: flex;
@@ -387,7 +389,7 @@
     cursor: pointer;
 }
 
-.pedidos-active p{
+.pedidos-doacao-active p{
     font-family: 'OpenSansRegular', sans-serif;
     font-size: 32px;
     color: #E9E9EA;
@@ -404,10 +406,10 @@
     color: #E9E9EA;
 }
 
-.solicitar{
+.solicitar-doacao{
     height: 100%;
     width: 50%;
-    background-color: #86BFEF;
+    background-color: #DDDBDB;
     border-top-right-radius: 10px;
     display: flex;
     justify-content: center;
@@ -415,16 +417,16 @@
     cursor: pointer;
 }
 
-.solicitar p{
+.solicitar-doacao p{
     font-family: 'OpenSansRegular', sans-serif;
     font-size: 32px;
-    color: #3D3838;
+    color: #50738F;
 }
 
-.solicitar-active{
+.solicitar-doacao-active{
     height: 100%;
     width: 50%;
-    background-color: #6B99BF;
+    background-color: #50738F;
 
     border-top-right-radius: 10px;
     display: flex;
@@ -433,14 +435,14 @@
     cursor: pointer;
 }
 
-.solicitar-active p{
+.solicitar-doacao-active p{
     font-family: 'OpenSansRegular', sans-serif;
     font-size: 32px;
     color: #E9E9EA;
 }
 
 .solicitar-active:hover{
-    background-color: #6B99BF;
+    background-color: #50738F;
     border-top-right-radius: 10px;
 
     
@@ -515,6 +517,35 @@
     border: 1px solid black;
 } */
 
+.texto-doar label{
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 24;
+    color: #3D3838;
+}
+
+label{
+    padding-right: 10px;
+}
+
+select{
+    font-size: 14px;
+    font-family: 'OpenSansRegular', sans-serif;
+
+    outline: none;
+    border: 1px solid #79ACD7;
+    border-radius: 5px;
+}
+
+input.numItens{
+    font-size: 14px;
+    font-family: 'OpenSansRegular', sans-serif;
+
+    outline: none;
+    border: 1px solid #79ACD7;
+    border-radius: 5px;
+}
+
+
 .texto-doar h4{
     font-family: 'OpenSansBold', sans-serif;
     font-size: 24;
@@ -529,6 +560,16 @@
 .texto-doar span{
     font-family: 'OpenSansBold', sans-serif;
     font-size: 24;
+}
+
+input.nomeBeneficiario{
+    font-size: 14px;
+    font-family: 'OpenSansRegular', sans-serif;
+    height: 25px;
+
+    outline: none;
+    border: 1px solid #79ACD7;
+    border-radius: 5px;
 }
 
 .endereco{
@@ -567,43 +608,21 @@ span{
     font-size: 16px;
     text-align: justify;
     border-radius: 10px;
+    resize: none;
     
     padding: 10px 10px 10px 10px;
     font-family: 'OpenSansBold', sans-serif;
     color: #3D3838;
   }
 
-  .data-hora{
-    padding-top: 10px;
-    height: 80px;
-    width: 95%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-.data{
-    padding: 20px 30px 20px 30px;
-}
-.data input{
-    outline: none;
-    border: 1px solid #79ACD7;
-    border-radius: 10px;
-    height: 40px;
-}
-.hora{
-    padding: 20px 30px 20px 30px;
-}
-.hora input{
-    outline: none;
-    border: 1px solid #79ACD7;
-    border-radius: 10px;
-    height: 40px;
-}
+
+
 
 .div-botoes{
     width: 95%;
     display: flex;
     justify-content: center;
+    padding-top: 30px;
 }
 .div-botao{
     padding: 10px 50px 10px 50px;

@@ -18,9 +18,22 @@ const HeaderInstituicao = () => {
                     <div className='nome-links'>
                         <Link to={'/homeAdmin'}>Inicio</Link>
                     </div>
-                    <div className='nome-links'>
-                        <Link>Doações</Link>
+
+                    <div className='botao-doacoes'> 
+                        <div className='conteudo-botao-doacoes'>
+                            <div className='nome-links-doacoes'>
+                                <Link>Doações</Link>
+                            </div>
+                            <div className='sub-doacoes'>
+                                <Link to={'/verPedidos'} ><div className='links-doacoes'> Verificar Pedidos</div></Link>
+                                
+                                <Link to={'/verDoacoes'} ><div className='links-doacoes'>Ver Doações</div></Link>
+                            </div>
+
+                        </div>
+
                     </div>
+
                     <div className='nome-links'>
                         <Link to={'/voluntarioAdmin'} >Seja um voluntário</Link>
                     </div>
