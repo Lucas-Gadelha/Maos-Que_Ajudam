@@ -38,10 +38,10 @@ const HeaderInstituicao = () => {
                         <Link to={'/voluntarioAdmin'} >Seja um voluntário</Link>
                     </div>
                     <div className='nome-links'>
-                        <Link href="">Fale conosco</Link>
+                        <Link to={'/faleConosco'} >Fale conosco</Link>
                     </div>
                     <div className='nome-links'>
-                        <Link clasName='link-eventos' href="">Eventos</Link>
+                        <Link className='link-eventos' href="">Eventos</Link>
                     </div>
                 </div>
                 <div className='usuario'>

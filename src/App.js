@@ -3,6 +3,7 @@ import Home from './Home/home';
 import './App.css';
 import Doacao from './Doacoes/doacoes';
 import Login from './login/login';
+import Contato from './Contato/contato';
 import Voluntario from './Voluntarios/voluntario';
 import { Eventos } from './Eventos/eventos';
 import HomeInstituicao from './Home/homeInstituicao';
@@ -28,6 +29,7 @@ function App() {
           <Route path='/voluntarioAdmin' element={<VoluntarioPaginaInstituicao/>} />
           <Route path='/verPedidos' element={<ListaPedidos/>} />
           <Route path='/verDoacoes' element={<VerDoacao/>} />
+          <Route path='/faleConosco' element={<Contato/>} />
 
           <Route path='/login' element={<Login/>} />
           <Route path='cadastro' element={<Cadastro/>} />
