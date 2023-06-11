@@ -1,0 +1,373 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+h1{
+  font-size: 56px;
+  font-family: 'OpenSansBold', sans-serif;
+  color: #3D3838;
+}
+
+p{
+  font-family: 'OpenSansRegular', sans-serif;
+}
+
+button{
+  border: none;
+}
+
+input{
+  outline: none;
+  font-size: 20px;
+  padding: 0px 20px;
+  font-family: 'OpenSansBold', sans-serif;
+  color: #3D3838;
+}
+
+.tudo{
+  width: 100vw;
+  /* height: 100vh; */
+  background-color: #BBD7B6;
+}
+
+.principal-login{
+  margin-top: 120px;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  background-color: #BBD7B6;
+  
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  background-color: #F5F5F5;
+  width: 100vw;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo{
+  height: 80px;
+  
+}
+
+.links{
+  display: flex;
+  padding-left: 100px;
+  align-items: center;
+}
+
+.nome-links{
+  padding-left: 40px;
+  position: relative;
+  right: 50px;
+}
+
+.nome-links a{
+  color: #54555A;
+  font-size: 16px;
+  font-family: 'OpenSansRegular', sans-serif;
+  text-decoration: none;
+}
+
+.nome-links a:hover{
+  color: #50738F;
+}
+
+.nome-links button{
+  font-size: 18px;
+  font-family: 'OpenSansBold';
+  color: white;
+  background-color: #0E761F;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.nome-links button:hover{
+  background-color: #0a6319;
+}
+
+
+
+/* doacoes instituicao*/
+
+.botao-doacoes{
+  position: relative;
+  padding-left: 40px;
+  right: 50px;
+
+}
+
+.conteudo-botao-doacoes{
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+
+}
+
+.nome-links-doacoes{
+  position: relative;
+}
+
+
+.nome-links-doacoes a{
+  color: #54555A;
+  font-size: 16px;
+  font-family: 'OpenSansRegular', sans-serif;
+  text-decoration: none;
+
+
+}
+
+.nome-links-doacoes a:hover{
+  color: #50738F;
+}
+
+
+.sub-doacoes{
+  position: relative;
+  background-color: #BCC8D1;
+  top: 50px;
+  width: auto;
+  
+
+  display: none;
+}
+
+.links-doacoes{
+  color: #54555A;
+  font-size: 16px;
+  font-family: 'OpenSansBold', sans-serif;
+  text-decoration: none; 
+  padding: 10px;
+
+
+  border-bottom: 1px solid #54555A;
+  cursor: pointer;
+}
+
+.botao-doacoes .conteudo-botao-doacoes:hover{
+  padding-top: 85px;
+
+  position: relative;
+  padding-left: 0px;
+  right: 0px;
+}
+
+.botao-doacoes .conteudo-botao-doacoes:hover .sub-doacoes{
+  display: block;
+}
+
+.links-doacoes:hover{
+  background-color: #d1dee8;
+}
+
+
+
+
+
+
+
+
+.usuario{
+  padding-left: 40px;
+  position: fixed;
+  top: 25px;
+  right: 60px;
+}
+
+.usuario .botao-user{
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px 10px 0px 10px;
+  width: 50px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icone-user{
+  width: auto;
+  height: 30px;
+  padding: 10px 10px;
+  padding-bottom: 43px;
+}
+
+
+.conta-active{
+  background-color: #BCC8D1;
+  width: 180px;
+  position: relative;
+  right: 10px;
+  display: none;
+ 
+}
+
+.conta-active .links-active{
+  padding: 15px;
+  border-bottom: 1px solid #54555A;
+  cursor: pointer;
+}
+
+.conta-active .links-active p{
+  text-align: center;
+  font-family: 'OpenSansBold', sans-serif;
+  color: #54555A;
+  font-size: 18px;
+}
+
+.usuario .botao-user:hover{
+  background-color: #D9D9D9;
+}
+
+.usuario .botao-user:hover .conta-active {
+  display: block;
+}
+
+.links-active:hover{
+  background-color: #d1dee8;
+}
+
+
+
+
+
+
+.img{
+  width: 600px;
+}
+
+.bloco-form{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 80vh;
+  
+}
+
+.form{
+  padding-top: 40px;
+  
+}
+
+.input{
+  width: 510px;
+  height: 70px;
+  margin-top: 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: #FFFFFF;
+}
+
+/* .input::-moz-placeholder{
+  font-size: 40px;
+} */
+
+input::placeholder {
+  font-size: 20px;
+  font-family: 'OpenSansRegular', sans-serif;
+  /* padding-left: 40px; */
+}
+
+.centralizar{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h1.centralizar{
+  font-size: 50px;
+}
+
+.esqueceu-senha{
+  text-align: end;
+  padding-top: 10px;
+  font-size: 16px;
+  font-family: 'OpenSansRegular', sans-serif;
+  
+  
+}
+.esqueceu-senha a{
+  color: #2A688A;
+}
+
+button.botao:hover{
+  background-color: #0b6219;
+}
+
+.botao{
+  width: 550px;
+  height: 51px;
+  margin: 34px 0px 0px 0px;
+  border-radius: 10px;
+  border: none;
+  background-color: #0E761F;
+
+}
+
+.botao p{
+  font-size: 18px;
+  font-family: 'OpenSansBold', sans-serif;
+  color: white;
+}
+
+.cadastrese{
+  font-size: 20px;
+  padding: 14px 0px 0px 0px;
+}
+.cadastrese p{
+  font-family: 'OpenSansBold', sans-serif;
+  color: #3D3838;
+}
+
+.cadastrese a{
+  color: #2A688A;
+}
+
+.entrecom{
+  padding-top: 50px;
+  text-align: center;
+}
+
+.entrecom p{
+  font-size: 24px;
+  color: #3D4E56;
+}
+
+.todos-icones{
+  display: flex;
+  justify-content: center;
+}
+
+.fundo-icone{
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  margin: 10px;
+  border-radius: 10px ;
+}
+
+.icones{
+  /* width: 40px; */
+  height: 40px;
+  
+  border: none;
+}
+
+.icone-google{
+  /* width: 40px; */
+  border: none;
+}
+
+
+
