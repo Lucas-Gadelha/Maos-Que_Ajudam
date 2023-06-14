@@ -336,7 +336,7 @@ span {
     position: fixed;
     top: 0;
     left: 0;
-    /* background-color: rgba(0, 0, 0, 0.2); */
+    background-color: rgb(107, 153, 176);
 
     display: flex;
     justify-content: center;
@@ -348,7 +348,8 @@ span {
 }
 
 .detalhes-pedidos {
-    position: fixed;
+    margin-top: 120px;
+    /* position: fixed; */
 
     display: flex;
     flex-direction: column;

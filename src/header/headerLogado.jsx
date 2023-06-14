@@ -28,7 +28,7 @@ const HeaderLogado = () => {
                         <Link to={'/faleConosco'}>Fale conosco</Link>
                     </div>
                     <div className='nome-links'>
-                        <Link to={'eventos'} className='link-eventos' href="">Eventos</Link>
+                        <Link to={'/eventos'} className='link-eventos' href="">Eventos</Link>
                     </div>
                 </div>
                 <div className='usuario'>

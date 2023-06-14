@@ -28,7 +28,7 @@ const DetalhesSolicitacao = () => {
                     
 
                 {/* </div> */}
-                <div className='detalhes-pedidos'>
+                <div className='detalhes-solicitacoes'>
                     <div className="titulo">
                         <h1>Detalhes</h1>
                     </div>

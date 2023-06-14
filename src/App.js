@@ -37,7 +37,7 @@ function App() {
           <Route path='/verDoacoes' element={<VerDoacao/>} />
           <Route path='/faleConosco' element={<Contato/>} />
             
-          <Route path='/detalhesSolicitacao' element={<Overlay/>} />
+          <Route path='/detalhesPedidos' element={<Overlay/>} />
           <Route path='/doar' element={<Doar/>} />
           <Route path='/solicitar' element={<Solicitar/>} />
           <Route path='/detalhesMinhaSolicitacao' element={<DetalhesSolicitacao/>} />

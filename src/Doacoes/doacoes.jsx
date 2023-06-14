@@ -60,7 +60,7 @@ const Doacao = () => {
 
     const MostrarOverlay = () => {
         setMostrarOverlay(true)
-        navigate("/detalhesSolicitacao")
+        navigate("/detalhesPedidos")
     }
 
     // const FecharOverlay = () => {
