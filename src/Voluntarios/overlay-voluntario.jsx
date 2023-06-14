@@ -1,14 +1,18 @@
+import { useNavigate } from 'react-router-dom'
+import HeaderLogado from '../header/headerLogado'
 import './voluntarios.css'
 // import Doar from './doar'
 // import Doacao from './doacoes'
 import { useState } from "react"
 
-const Overlay = () => {
+const OverlayVoluntario = () => {
+    const navigate = useNavigate()
     const [fecharOverlay, setFecharOverlay] = useState(false)
     // const [doar, setDoar] = useState(false)
 
     const FecharOverlay = () => {
         setFecharOverlay(true)
+        navigate("/seja-um-voluntario")
     }
 
     if(fecharOverlay==true){
@@ -20,7 +24,8 @@ const Overlay = () => {
 
         <div>
 
-            <div className='overlay'>
+            <div className='overlay-voluntarios'>
+                <HeaderLogado/>
                 <div className='detalhes-pedidos'>
                     <div className="titulo">
                         <h1>Detalhes</h1>
@@ -73,4 +78,4 @@ const Overlay = () => {
 }
 
 
-export default Overlay
+export default OverlayVoluntario
