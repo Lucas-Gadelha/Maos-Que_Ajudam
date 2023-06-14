@@ -2,8 +2,11 @@ import { useState } from "react"
 import HeaderLogado from "../header/headerLogado"
 import './voluntarios.css'
 import Overlay from "./overlay-voluntario"
+import { useNavigate } from "react-router-dom"
 
 const Voluntario = () => {
+    const navigate = useNavigate()
+
     //variaveis de estado que controlam se o conteudo do historico do voluntario está visivel
     const [tarefas, setTarefas] = useState('Tarefa 1')
     const [classeCSS, setClasseCSS] = useState('conteudo-historico-active')
@@ -50,6 +53,7 @@ const Voluntario = () => {
 
     const MostrarOverlay = () => {
         setMostrarOverlay(true)
+        navigate("/detalhes")
     }
 
     //Função para mostrar os pedidos para o voluntario se cadastrar

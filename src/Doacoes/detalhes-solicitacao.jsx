@@ -1,13 +1,18 @@
+import { useNavigate } from 'react-router-dom'
+import HeaderLogado from '../header/headerLogado'
 import './doacoes.css'
-import Doar from './doar'
+// import Doar from './doar'
 // import Doacao from './doacoes'
 import { useState } from "react"
 
 const DetalhesSolicitacao = () => {
+    const navigate = useNavigate()
+
     const [fecharOverlay, setFecharOverlay] = useState(false)
 
     const FecharOverlay = () => {
         setFecharOverlay(true)
+        navigate("/doacoes")
     }
 
     if(fecharOverlay==true){
@@ -16,9 +21,13 @@ const DetalhesSolicitacao = () => {
 
 
     return (
-        <div>
-
+        <div className='tudo-detalhes-solicitar' >
+            <HeaderLogado/>
             <div className='overlay'>
+                {/* <div className='header'> */}
+                    
+
+                {/* </div> */}
                 <div className='detalhes-pedidos'>
                     <div className="titulo">
                         <h1>Detalhes</h1>

@@ -1,14 +1,21 @@
+
+import HeaderLogado from '../header/headerLogado'
 import './doacoes.css'
 import Doar from './doar'
 // import Doacao from './doacoes'
 import { useState } from "react"
+import { useNavigate } from 'react-router-dom'
 
 const Overlay = () => {
+    const navigate = useNavigate();
+
     const [fecharOverlay, setFecharOverlay] = useState(false)
     const [doar, setDoar] = useState(false)
 
     const FecharOverlay = () => {
+        navigate("/doacoes")
         setFecharOverlay(true)
+        
     }
 
     if(fecharOverlay==true){
@@ -17,11 +24,16 @@ const Overlay = () => {
 
     const AbrirPaginaDoar = () => {
         setDoar(true)
+        navigate("/doar")
     }
+
+    
 
 
     return (
         <div>
+
+            <HeaderLogado/>
 
             <div className='overlay'>
                 <div className='detalhes-pedidos-pag-doacoes'>

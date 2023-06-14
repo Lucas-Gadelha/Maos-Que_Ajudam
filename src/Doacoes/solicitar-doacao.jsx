@@ -1,13 +1,18 @@
+import { useNavigate } from "react-router-dom";
+import HeaderLogado from "../header/headerLogado";
 import Doacao from "./doacoes"
 import { useState } from "react"
 
 const Solicitar = () => {
+    const navigate = useNavigate()
+    
     const [fecharDoacao, setFecharDoacao] = useState(false)
     const [opcaoSelecionada, setOpcaoSelecionada] = useState('');
     const [mostrarCampoEndereco, setMostrarCampoEndereco] = useState(false);
 
     const FecharDoacao = () => {
         setFecharDoacao(true)
+        navigate('/doacoes')
     }
 
     if (fecharDoacao == true) {
@@ -29,6 +34,7 @@ const Solicitar = () => {
 
     return (
         <div className="pagina-doar">
+            <HeaderLogado/>
             <div className="realizar-doacao">
                 <div className="titulo">
                     <h1>Realizar doação</h1>

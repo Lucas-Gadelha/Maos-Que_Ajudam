@@ -1,11 +1,15 @@
+// AIzaSyBcul-fdwyBjSUDN7c8NtMYTbxuBm4rxh8
+import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 import HeaderLogado from "../header/headerLogado"
 import './doacoes.css'
 import Overlay from "./doacoes-solicitar"
 import Solicitar from "./solicitar-doacao"
 import DetalhesSolicitacao from "./detalhes-solicitacao"
+// import Doar from "./doar"
 
 const Doacao = () => {
+    const navigate = useNavigate();
     const [doacoes, setDoacoes] = useState('Doacao 1')
     const [classeCSS, setClasseCSS] = useState('conteudo-historico-doacao-active')
     const [exibirDetalhes, setExibirDetalhes] = useState(false);
@@ -15,12 +19,30 @@ const Doacao = () => {
 
     const [classePedidoAtiva, setClassePedidoAtiva] = useState('pedidos-doacao-active');
     const [classeSolicitarAtiva, setClasseSolicitarAtiva] = useState('solicitar-doacao');
-    
+
     const [botaoSolicitar, setBotaoSolicitar] = useState(false)
 
     const [mostrarOverlay, setMostrarOverlay] = useState(false);
 
     const [mostrarDetalhesSolicitacao, setMostrarDetalhesSolicitacao] = useState(false);
+
+    // const [fecharOverlay, setFecharOverlay] = useState(false)
+    // const [doar, setDoar] = useState(false)
+
+    // const FecharOverlay = () => {
+    //     setFecharOverlay(true)
+    // }
+
+    // if(fecharOverlay==true){
+    //     return null
+    // }
+
+
+    // const AbrirPaginaDoar = () => {
+    //     setDoar(true)
+    // }
+
+   
 
 
     const AcaoBotao = () => {
@@ -38,7 +60,15 @@ const Doacao = () => {
 
     const MostrarOverlay = () => {
         setMostrarOverlay(true)
+        navigate("/detalhesSolicitacao")
     }
+
+    // const FecharOverlay = () => {
+    //     setMostrarOverlay(false)
+    //     console.log('Clicou')
+
+        
+    // }
 
     const MostrarPedidos = () => {
         setExibirPedidos(true)
@@ -60,11 +90,15 @@ const Doacao = () => {
 
     const AbrirPaginadeSolicitacao = () => {
         setBotaoSolicitar(true)
+        navigate("/solicitar")
     }
 
     const MostrarDetalhesSolicitacao = () => {
         setMostrarDetalhesSolicitacao(true)
+        navigate("/detalhesMinhaSolicitacao")
     }
+
+    
 
 
     return (
@@ -172,7 +206,7 @@ const Doacao = () => {
                                         </div>
                                         <div className="conteudo-solicitar">
                                             <span onClick={MostrarDetalhesSolicitacao} >
-                                                <p>Solicitação 1</p>
+                                                <p>Solicitação 00000</p>
                                             </span>
 
                                         </div>
@@ -199,15 +233,17 @@ const Doacao = () => {
                                 </div>
                             ) : null}
 
-                        
+
                         </div>
 
 
-                        {botaoSolicitar && <Solicitar/>}
+                        {botaoSolicitar && <Solicitar />}
+
+                        {/* {doar && <Doar/> } */}
 
                         {mostrarOverlay && <Overlay />}
 
-                        {mostrarDetalhesSolicitacao && <DetalhesSolicitacao/>}
+                        {mostrarDetalhesSolicitacao && <DetalhesSolicitacao />}
                     </div>
                 </div>
             </div>

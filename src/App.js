@@ -11,6 +11,12 @@ import VoluntarioPaginaInstituicao from './Voluntarios/Instituicao/voluntarioIns
 import Cadastro from './Cadastro/cadastro';
 import ListaPedidos from './Voluntarios/Instituicao/listadepedidos';
 import VerDoacao from './Voluntarios/Instituicao/verDoacao';
+// import DetalhesSolicitacao from './Doacoes/detalhes-solicitacao';
+import Overlay from './Doacoes/doacoes-solicitar';
+import Doar from './Doacoes/doar';
+import Solicitar from './Doacoes/solicitar-doacao';
+import DetalhesSolicitacao from './Doacoes/detalhes-solicitacao';
+import OverlayVoluntario from './Voluntarios/overlay-voluntario';
 
 
 
@@ -30,6 +36,12 @@ function App() {
           <Route path='/verPedidos' element={<ListaPedidos/>} />
           <Route path='/verDoacoes' element={<VerDoacao/>} />
           <Route path='/faleConosco' element={<Contato/>} />
+            
+          <Route path='/detalhesSolicitacao' element={<Overlay/>} />
+          <Route path='/doar' element={<Doar/>} />
+          <Route path='/solicitar' element={<Solicitar/>} />
+          <Route path='/detalhesMinhaSolicitacao' element={<DetalhesSolicitacao/>} />
+          <Route path='/detalhes' element={<OverlayVoluntario/>} />
 
           <Route path='/login' element={<Login/>} />
           <Route path='cadastro' element={<Cadastro/>} />
