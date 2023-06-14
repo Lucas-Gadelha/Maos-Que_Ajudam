@@ -25,10 +25,10 @@ const HeaderLogado = () => {
                         <Link to={'/seja-um-voluntario'}>Seja um voluntário</Link>
                     </div>
                     <div className='nome-links'>
-                        <Link href="">Fale conosco</Link>
+                        <Link to={'/faleConosco'}>Fale conosco</Link>
                     </div>
                     <div className='nome-links'>
-                        <Link to={'eventos'} clasName='link-eventos' href="">Eventos</Link>
+                        <Link to={'eventos'} className='link-eventos' href="">Eventos</Link>
                     </div>
                 </div>
                 <div className='usuario'>
