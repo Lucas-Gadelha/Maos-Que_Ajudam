@@ -23,7 +23,7 @@ const restrictionBounds = {
 export const EventosInstituicao = () => {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyBcul-fdwyBjSUDN7c8NtMYTbxuBm4rxh8"
+    googleMapsApiKey: ""
   })
   return isLoaded ? (
     <div>
