@@ -1,3 +1,13 @@
+.teste{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vh;
+
+    top: 0;
+    left: 0;
+}
+
 .tudo-detalhes-solicitar{
     width: 100vw;
     height: 100vh;
@@ -9,14 +19,14 @@
 
 .overlay{
     width: 100vw;
-    height: 90vh;
-    /* position: fixed; */
-    /* top: 120px; */
+    height: 100vh;
+    position: fixed;
+    top: 0px;
     /* left: 0; */
     background-color: rgba(0, 0, 0, 0.2);
 
-    margin-top: 120px;
-    background-color: #6b99b0;
+    /* margin-top: 120px; */
+    /* background-color: #6b99b0; */
 
     display: flex;
     justify-content: center;
@@ -28,6 +38,10 @@
     top: 0;
     left: 0;
 }
+
+
+
+
 
 
 
@@ -103,11 +117,68 @@
 
 
 
+.Frase-Doar{
+    background-color: #2F4354;
+    /* border: 1px solid red; */
+    margin-top: 120px;
+    width: 100vw;
+    height: 130px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* .frase{
+    display: flex;
+    justify-content: center;
+} */
+
+.largura-da-frase{
+    width: 80%;
+    text-align: justify;
+    /* padding-left: 10px ; */
+    /* padding-top: 10px; */
+    height: 50%;
+    /* border: 1px solid red; */
+    /* background-color: white; */
+}
+h2.largura-da-frase{
+    color: rgb(238, 238, 238);
+    font-family: 'OpenSansRegular', sans-serif;
+    font-size: 20px;
+}
+
+/* h4{
+    color: white;
+} */
+
+.botao-doar-aqui{
+    position: relative;
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    /* background-color: ; */
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+    color: white;
+    position: static;
+    padding-left: 10px;
+}
+
+.botao-doar-aqui:hover{
+    color: #79ACD7;
+}
+
 
 
 .doacoes{
-    margin-top: 120px;
-    padding-top: 120px;
+    /* margin-top: 120px; */
+    padding-top: 80px;
     background-color: #6B99BF;
     width: 100vw;
     height: 100vh;
@@ -126,7 +197,7 @@
 
 .titulo{
     width: 95%;
-    background-color: #79ACD7;
+    background-color: #2F4354;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -138,7 +209,7 @@
     text-align: center;
 }
 
-.lista-conteudo{
+.lista-conteudo-historico{
     background-color: #E9E9EA;
     width: 100%;
     height: 100%;
@@ -146,12 +217,14 @@
     border-radius: 10px;
 
     overflow-y: scroll;
+
+    
 }
 
 .lista-conteudo-doacao{
     background-color: #E9E9EA;
     width: 100%;
-    height: 100%;
+    height: 90%;
     box-shadow: 0px 5px 8px 6px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 
@@ -183,6 +256,9 @@
 }
 
 .conteudo-box-right{
+    width: 100%;
+    height: 85%;
+    border-radius: 10px;
     overflow-y: scroll;
 }
 
@@ -194,6 +270,7 @@
    
     align-items: center;
     cursor: pointer;
+
     /* border-bottom: 1px solid #3D3838; */
 
 }
@@ -282,6 +359,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    padding-bottom: 20px;
 }
 
 
@@ -294,6 +373,7 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid #3D3838;
+    margin-bottom: 2px;
 
 }
 .titulo-solicitar-doacao p{
@@ -313,6 +393,7 @@
     align-items: center;
     cursor: pointer;
     border-bottom: 1px solid #3D3838;
+    /* margin-bottom: 10px; */
 
 }
 .conteudo-solicitar p{
@@ -351,7 +432,7 @@
 
 .voltar{
     position: relative;
-    font-family: 'OpenSansBold', sans-serif;
+    font-family: 'OpenSansRegular', sans-serif;
     font-size: 20px;
     cursor: pointer;
     box-sizing: border-box;
@@ -496,6 +577,26 @@
 
 
 
+/* Solicitar */
+
+.pagina-solicitar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin-top: 120px;
+    width: 100vw;
+    height: 100vh;
+    /* border: 1px solid black; */
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+
+    /* background-color: #6b99b0; */
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
 
 
 
@@ -503,7 +604,7 @@
 /* Pagina Doar */
 
 .pagina-doar{
-    /* position: fixed; */
+    position: fixed;
     top: 0px;
     left: 0px;
     margin-top: 120px;
@@ -514,16 +615,18 @@
     display: flex;
     /* align-items: center; */
     justify-content: center;
+    background-color: #50738F;
 
-    background-color: #6b99b0;
+    /* background-color: #6b99b0; */
 
 }
 
 .realizar-doacao{
     height: 85%;
-    width: 90%;
+    width: 100%;
     padding-top: 10px;
     /* border: 1px solid black; */
+    
 
     display: flex;
     flex-direction: column;
@@ -596,9 +699,10 @@ input.numItens{
 }
 
 input.nomeBeneficiario{
-    font-size: 14px;
-    font-family: 'OpenSansRegular', sans-serif;
     height: 25px;
+    /* font-size: 10px; */
+    font-family: 'OpenSansRegular', sans-serif;
+    
 
     outline: none;
     border: 1px solid #79ACD7;
@@ -660,9 +764,9 @@ span{
 .div-botao{
     padding: 10px 50px 10px 50px;
 }
-.div-botao span{
+/* .div-botao span{
     font-family: 'OpenSansRegular', sans-serif;
-}
+} */
 
 .Confirmar{
     width: auto;

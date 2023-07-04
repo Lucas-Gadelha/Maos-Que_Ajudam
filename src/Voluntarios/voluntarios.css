@@ -49,7 +49,28 @@ span {
     height: 100%;
     box-shadow: 0px 5px 8px 6px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+
+    overflow-y: scroll;
+   
 }
+
+.lista-conteudo-tarefas {
+    background-color: #E9E9EA;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 5px 8px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+   
+}
+
+.conteudo-box-right-voluntarios {
+    width: 100%;
+    height: 85%;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+
 
 
 .conteudo-historico-active {
@@ -103,6 +124,8 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    padding-bottom: 20px;
 }
 
     /* Fim detalhes no historico */
@@ -192,7 +215,7 @@ span {
 }
 
 .pedidos-active:hover {
-    background-color: #50738F;
+    background-color:  #50738F;
     border-top-left-radius: 10px;
 
 
@@ -311,7 +334,7 @@ span {
 
 .voltar {
     position: relative;
-    font-family: 'OpenSansBold', sans-serif;
+    font-family: 'OpenSansRegular', sans-serif;
     font-size: 20px;
     cursor: pointer;
     box-sizing: border-box;
@@ -336,7 +359,8 @@ span {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgb(107, 153, 176);
+    /* background-color: rgb(107, 153, 176); */
+    background-color: rgba(0, 0, 0, 0.2);
 
     display: flex;
     justify-content: center;
@@ -348,8 +372,8 @@ span {
 }
 
 .detalhes-pedidos {
-    margin-top: 120px;
-    /* position: fixed; */
+    /* margin-top: 120px; */
+    position: fixed;
 
     display: flex;
     flex-direction: column;

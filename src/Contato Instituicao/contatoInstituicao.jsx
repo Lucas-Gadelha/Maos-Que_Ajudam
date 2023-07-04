@@ -1,12 +1,13 @@
-import "./contato.css";
+import "./contatoInstituicao.css";
 import imagem2 from "../imagens/imagem2.png";
 import "../fonts.css";
-import HeaderLogado from "../header/headerLogado";
+// import HeaderLogado from "../header/headerLogado";
+import HeaderInstituicao from "../header/headerInstituicao";
 
-const Contato = () => {
+const ContatoInstituicao = () => {
   return (
     <div className="toda-pagina">
-      <HeaderLogado />
+      <HeaderInstituicao />
         <div className="conteudo">
             <div className="contato">
             <span className="info">Saiba como conversar com nossa equipe</span>
@@ -50,12 +51,14 @@ const Contato = () => {
                     </svg>
                 </div>
                 </div>
-                
+                <div className="align-right">
+                    <button className="botao-editar">Editar</button>
+                </div>
             </div>
             </div>
             <img
             className="img-card"
-            height="500px"
+            height="424px"
             src={imagem2}
             alt="imagem da pagina fale conosco"
             />
@@ -64,4 +67,4 @@ const Contato = () => {
   );
 };
 
-export default Contato;
+export default ContatoInstituicao;

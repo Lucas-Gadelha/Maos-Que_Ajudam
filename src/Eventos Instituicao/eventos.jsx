@@ -1,5 +1,6 @@
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api"
-import HeaderLogado from "../header/headerLogado";
+// import HeaderLogado from "../header/headerLogado";
+import HeaderInstituicao from "../header/headerInstituicao";
 
 const containerStyle = {
   marginTop: '120px',
@@ -19,7 +20,7 @@ const restrictionBounds = {
   west: -39.041461
 };
 
-const Eventos = () => {
+export const EventosInstituicao = () => {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: "AIzaSyBcul-fdwyBjSUDN7c8NtMYTbxuBm4rxh8"
@@ -38,12 +39,10 @@ const Eventos = () => {
       >
 
       </GoogleMap>
-      <HeaderLogado />
+      <HeaderInstituicao />
     </div>
     ) : <></>
 
     
 }
-
-export default Eventos
 

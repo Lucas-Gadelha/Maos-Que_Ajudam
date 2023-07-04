@@ -22,12 +22,9 @@ const DetalhesSolicitacao = () => {
 
     return (
         <div className='tudo-detalhes-solicitar' >
-            <HeaderLogado/>
+            <HeaderLogado/> 
             <div className='overlay'>
-                {/* <div className='header'> */}
-                    
-
-                {/* </div> */}
+                
                 <div className='detalhes-solicitacoes'>
                     <div className="titulo">
                         <h1>Detalhes</h1>

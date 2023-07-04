@@ -1,11 +1,15 @@
 import { useState } from "react"
 import './voluntarioInstituicao.css'
+import HeaderInstituicao from "../../header/headerInstituicao"
+import { useNavigate } from "react-router-dom"
 
 const DetalhesPedido = () => {
+    const navigate = useNavigate()
     const [fecharDetalhes, setFecharDetalhes] = useState(false)
 
     const FecharDetalhes = () => {
-        setFecharDetalhes(true)
+        setFecharDetalhes(true);
+        navigate("/verPedidos")
     }
 
     if(fecharDetalhes==true){
@@ -18,6 +22,7 @@ const DetalhesPedido = () => {
         <div>
 
             <div className='detalhes'>
+                <HeaderInstituicao/>
                 <div className='detalhes-pedidos-adm'>
                     <div className="titulo">
                         <h1>Detalhes</h1>

@@ -36,7 +36,10 @@ const HeaderLogado = () => {
                         <img className='icone-user' src={user} alt='user' />
 
                         <div className='conta-active'>
-                            <div className='links-active'> <p>Meu perfil</p></div>
+                            <Link to={'/perfil'} > 
+                                <div className='links-active'> <p>Meu perfil</p> </div>
+                            </Link>
+                            
                             <Link to={'/login'}>
                                 <div className='links-active' >
                                     <p>Sair</p>

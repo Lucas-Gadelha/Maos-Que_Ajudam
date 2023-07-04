@@ -3,12 +3,14 @@ import HeaderLogado from "../header/headerLogado"
 import './voluntarios.css'
 import Overlay from "./overlay-voluntario"
 import { useNavigate } from "react-router-dom"
+import axios from "axios"
+import { useEffect } from "react"
 
 const Voluntario = () => {
     const navigate = useNavigate()
 
     //variaveis de estado que controlam se o conteudo do historico do voluntario está visivel
-    const [tarefas, setTarefas] = useState('Tarefa 1')
+    const [tarefas, setTarefas] = useState([])
     const [classeCSS, setClasseCSS] = useState('conteudo-historico-active')
     const [exibirDetalhes, setExibirDetalhes] = useState(false);
 
@@ -24,6 +26,24 @@ const Voluntario = () => {
 
     const [mostrarOverlay, setMostrarOverlay] = useState(false);
 
+    const [entregas, setEntregas] = useState([])
+
+
+    useEffect(
+        () => {
+            axios.get("http://localhost:3001/doacao/listar")
+                .then(
+                    (response) => {
+                        setEntregas(response.data);
+
+                    }
+                )
+                .catch(error => console.log(error))
+        }
+        ,
+        []
+    )
+
 
 
     const AcaoBotao = () => {
@@ -33,7 +53,7 @@ const Voluntario = () => {
     }
 
     const AcaoBotaoVoltar = () => {
-        setTarefas('Tarefa 1')
+        setTarefas([])
         setExibirDetalhes(false);
         setClasseCSS('conteudo-historico-active')
     };
@@ -53,8 +73,14 @@ const Voluntario = () => {
 
     const MostrarOverlay = () => {
         setMostrarOverlay(true)
-        navigate("/detalhes")
+        // navigate("/detalhes")
     }
+
+    const FecharOverlay = () => {
+        setMostrarOverlay(false)
+        // navigate("/detalhes")
+    }
+
 
     //Função para mostrar os pedidos para o voluntario se cadastrar
     const MostrarNovosPedidos = () => {
@@ -145,7 +171,7 @@ const Voluntario = () => {
                     <div className="titulo">
                         <h1>Tarefas</h1>
                     </div>
-                    <div className="lista-conteudo">
+                    <div className="lista-conteudo-tarefas">
                         <div className="paginas">
                             <button onClick={MostrarNovosPedidos} className={classeNovosPedidosAtiva}>
                                 <p>Novas</p>
@@ -155,14 +181,32 @@ const Voluntario = () => {
                             </button>
 
                         </div>
-
+                        <div className="conteudo-box-right-voluntarios">
                         {exibirPedidos ? (
-                            <div onClick={MostrarOverlay} className="conteudo-pedidos-voluntario">
-                                <span >
-                                    <p>Solicitação 1</p>
-                                </span>
+                            entregas.map(
+                                (entrega) => {
+                                    return (
 
-                            </div>
+                                        <div onClick={MostrarOverlay} className="conteudo-pedidos-voluntario" key={entrega._id} >
+                                            <span>
+                                                <p>{`${entrega.tipo} para entrega `}</p>
+
+
+                                            </span>
+
+                                        </div>
+
+
+
+                                    )
+                                }
+                            )
+                            // <div onClick={MostrarOverlay} className="conteudo-pedidos-voluntario">
+                            //     <span >
+                            //         <p>Solicitação 1</p>
+                            //     </span>
+
+                            // </div>
 
                         ) : null}
 
@@ -226,7 +270,60 @@ const Voluntario = () => {
                             </div>
                         ) : null}
 
-                        {mostrarOverlay && <Overlay />}
+                        {mostrarOverlay ? (
+                            <div className='overlay-voluntarios'>
+                                <div className='detalhes-pedidos'>
+                                    <div className="titulo">
+                                        <h1>Detalhes</h1>
+                                    </div>
+                                    <div className="conteudo-detalhes">
+                                        <div className="texto-detalhes">
+                                            <h4>Resumo:</h4>
+                                        </div>
+                                        <div className="texto-detalhes">
+                                            <h4>Endereço:</h4>
+                                        </div>
+                                        <div className="texto-detalhes">
+                                            <h4>Tipo de Item:</h4>
+                                        </div>
+                                        <div className="texto-detalhes">
+                                            <h4>Destinatário:</h4>
+                                        </div>
+                                        <div className="texto-detalhes">
+                                            <h4>Código:</h4>
+                                        </div>
+                                        <div className="texto-detalhes">
+                                            <label>Voluntario:</label>
+                                            <input type="text" placeholder='Escreva seu nome' />
+                                        </div>
+
+                                        <div className="texto-detalhes">
+                                            <h4 className='data-voluntario'>
+                                                <label>
+                                                    <span>Que dia voce gostaria de fazer a entrega? </span><input type='date'></input>
+                                                </label>
+                                            </h4>
+                                        </div>
+                                        <div className="texto-detalhes">
+                                            <h4>
+                                                <label className='hora-voluntario' >
+                                                    <span>Que horas voce gostaria de fazer a entrega? </span><input type='time'></input>
+                                                </label>
+                                            </h4>
+                                        </div>
+
+                                        <div className="botoes">
+                                            <button onClick={FecharOverlay} className="Confirmar"><p>Confirmar</p></button>
+                                            <button onClick={FecharOverlay} className="Cancelar"><p>Cancelar</p></button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ) : null}
+                        </div>
+
+                        
 
                     </div>
                 </div>

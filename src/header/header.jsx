@@ -26,7 +26,7 @@ const Header = () => {
                         <a href="">Eventos</a>
                     </div>
                     <div className='nome-links'>
-                        <Link to={'/homeAdmin'}>
+                        <Link to={'/'}>
                             <button className='botao-entrar'>
                                 Entrar
                             </button>

@@ -1,5 +1,7 @@
+import { Children } from 'react'
 import '../App.css'
 import '../fonts.css'
+import confirma from '../icones/confirma.jpg'
 
 const BackgroundStyle = {
     position: "fixed",
@@ -14,8 +16,8 @@ const BackgroundStyle = {
 const ModalStyle = {
 
     position: "fixed",
-    width: '656px',
-    height: '258px',
+    width: '30vw',
+    height: '10vh',
     top: '50%',
     left: '50%',
     transform: 'translate(-50%,-50%)',
@@ -25,11 +27,20 @@ const ModalStyle = {
 
 }
 
-const CriarConta = ({isOpen}) => {
+const CriarConta = ({isOpen, setModalOpen, children}) => {
         if(isOpen) {
             return (
                 <div style={BackgroundStyle}>
-                    <div style={ModalStyle}>Conta criada com sucesso</div>
+                    <div style={ModalStyle}>
+                        <div className='fechar' onClick={setModalOpen}>x</div>
+                        <div className='conta-criada'>
+                            {children}
+                            <button onClick={setModalOpen}>
+                                <img src={confirma} alt="" className='confirma' />
+                            </button>
+                        </div>
+                        
+                    </div>
                 </div>
             )
 

@@ -35,13 +35,13 @@ const HeaderInstituicao = () => {
                     </div>
 
                     <div className='nome-links'>
-                        <Link to={'/voluntarioAdmin'} >Seja um voluntário</Link>
+                        <Link to={'/voluntarioAdmin'} >Voluntários</Link>
                     </div>
                     <div className='nome-links'>
-                        <Link to={'/faleConosco'} >Fale conosco</Link>
+                        <Link to={'/faleConoscoAdmin'} >Fale conosco</Link>
                     </div>
                     <div className='nome-links'>
-                        <Link className='link-eventos' href="">Eventos</Link>
+                        <Link to={'/eventosInstituicao'} className='link-eventos' href="">Eventos</Link>
                     </div>
                 </div>
                 <div className='usuario'>

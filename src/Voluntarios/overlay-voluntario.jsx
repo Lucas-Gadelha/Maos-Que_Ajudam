@@ -44,23 +44,24 @@ const OverlayVoluntario = () => {
                             <h4>Destinatário:</h4>
                         </div>
                         <div className="texto-detalhes">
-                            <label>Voluntario:</label>
-                            <input type="text" placeholder='Escreva seu nome' />
-                        </div>
-                        <div className="texto-detalhes">
                             <h4>Código:</h4>
                         </div>
                         <div className="texto-detalhes">
+                            <label>Voluntario:</label>
+                            <input type="text" placeholder='Escreva seu nome' />
+                        </div>
+                       
+                        <div className="texto-detalhes">
                             <h4 className='data-voluntario'>
                                 <label>
-                                    <span>Data:</span><input type='date'></input>
+                                    <span>Que dia voce gostaria de fazer a entrega? </span><input type='date'></input>
                                 </label>
                             </h4>
                         </div>
                         <div className="texto-detalhes">
                             <h4>
                                 <label  className='hora-voluntario' >
-                                    <span>Hora:</span><input type='time'></input>
+                                    <span>Que horas voce gostaria de fazer a entrega? </span><input type='time'></input>
                                 </label>
                             </h4>
                         </div>
